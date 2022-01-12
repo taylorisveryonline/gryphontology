@@ -1,0 +1,2102 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.gryphontology.org/"
+     xml:base="http://www.gryphontology.org/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:www="http://www.gryphontology.org/#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:wikidata="https://www.wikidata.org/wiki/Special:EntityData/">
+    <owl:Ontology rdf:about="http://www.gryphontology.org/">
+        <dc:contributor xml:lang="en">Taylor Howard (She/Her/Hers)</dc:contributor>
+        <dc:description xml:lang="en">An open-source formal ontology of legendary creatures from around the world.</dc:description>
+        <dc:title xml:lang="en">GryphOntology</dc:title>
+        <rdfs:seeAlso xml:lang="en">https://github.com/taylorisveryonline/gryphontology</rdfs:seeAlso>
+        <owl:versionInfo xml:lang="en">2021-01-12</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/subject -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://www.gryphontology.org/historical_description -->
+
+    <owl:AnnotationProperty rdf:about="http://www.gryphontology.org/historical_description"/>
+    
+
+
+    <!-- http://www.gryphontology.org/wikidata_identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://www.gryphontology.org/wikidata_identifier"/>
+    
+
+
+    <!-- http://www.gryphontology.org/#historical_description -->
+
+    <owl:AnnotationProperty rdf:about="http://www.gryphontology.org/#historical_description">
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.gryphontology.org/#wikidata_identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://www.gryphontology.org/#wikidata_identifier">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#equivalentClass -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.gryphontology.org/belongs_to_habitat -->
+
+    <owl:ObjectProperty rdf:about="http://www.gryphontology.org/belongs_to_habitat">
+        <rdfs:domain rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <rdfs:range rdf:resource="http://www.gryphontology.org/#Habitat"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gryphontology.org/can_shape_shift -->
+
+    <owl:ObjectProperty rdf:about="http://www.gryphontology.org/can_shape_shift">
+        <rdfs:domain rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <rdfs:range rdf:resource="http://www.gryphontology.org/Behavior"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gryphontology.org/found_in_country -->
+
+    <owl:ObjectProperty rdf:about="http://www.gryphontology.org/found_in_country">
+        <rdfs:domain rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <rdfs:range rdf:resource="http://www.gryphontology.org/Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gryphontology.org/has_degree_of_corporeality -->
+
+    <owl:ObjectProperty rdf:about="http://www.gryphontology.org/has_degree_of_corporeality">
+        <rdfs:domain rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <rdfs:range rdf:resource="http://www.gryphontology.org/Corporeality"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gryphontology.org/has_degree_of_sentience -->
+
+    <owl:ObjectProperty rdf:about="http://www.gryphontology.org/has_degree_of_sentience">
+        <rdfs:domain rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <rdfs:range rdf:resource="http://www.gryphontology.org/#Sentience"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gryphontology.org/has_feeding_habit -->
+
+    <owl:ObjectProperty rdf:about="http://www.gryphontology.org/has_feeding_habit">
+        <rdfs:domain rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <rdfs:range rdf:resource="http://www.gryphontology.org/#Feeding_Habit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gryphontology.org/has_fur -->
+
+    <owl:ObjectProperty rdf:about="http://www.gryphontology.org/has_fur"/>
+    
+
+
+    <!-- http://www.gryphontology.org/has_moral_polarity -->
+
+    <owl:ObjectProperty rdf:about="http://www.gryphontology.org/has_moral_polarity">
+        <rdfs:domain rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <rdfs:range rdf:resource="http://www.gryphontology.org/#Moral_Polarity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gryphontology.org/has_mortality -->
+
+    <owl:ObjectProperty rdf:about="http://www.gryphontology.org/has_mortality">
+        <rdfs:domain rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <rdfs:range rdf:resource="http://www.gryphontology.org/#Mortality"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gryphontology.org/has_mythic_archetype -->
+
+    <owl:ObjectProperty rdf:about="http://www.gryphontology.org/has_mythic_archetype">
+        <rdfs:domain rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <rdfs:range rdf:resource="http://www.gryphontology.org/Archetype"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gryphontology.org/has_rhythm_cycle -->
+
+    <owl:ObjectProperty rdf:about="http://www.gryphontology.org/has_rhythm_cycle">
+        <rdfs:domain rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <rdfs:range rdf:resource="http://www.gryphontology.org/#Rhythm_Cycle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gryphontology.org/has_scales -->
+
+    <owl:ObjectProperty rdf:about="http://www.gryphontology.org/has_scales"/>
+    
+
+
+    <!-- http://www.gryphontology.org/has_traits_of_animal -->
+
+    <owl:ObjectProperty rdf:about="http://www.gryphontology.org/has_traits_of_animal">
+        <rdfs:domain rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <rdfs:range rdf:resource="http://www.gryphontology.org/Real_Creature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gryphontology.org/is_able_to_fly -->
+
+    <owl:ObjectProperty rdf:about="http://www.gryphontology.org/is_able_to_fly">
+        <rdfs:domain rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <rdfs:range rdf:resource="http://www.gryphontology.org/#Flight_Capability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gryphontology.org/is_described_by_civilization -->
+
+    <owl:ObjectProperty rdf:about="http://www.gryphontology.org/is_described_by_civilization">
+        <rdfs:domain rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <rdfs:range rdf:resource="http://www.gryphontology.org/Civilization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gryphontology.org/is_described_in_region -->
+
+    <owl:ObjectProperty rdf:about="http://www.gryphontology.org/is_described_in_region">
+        <rdfs:domain rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <rdfs:range rdf:resource="http://www.gryphontology.org/Region"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gryphontology.org/is_magical -->
+
+    <owl:ObjectProperty rdf:about="http://www.gryphontology.org/is_magical">
+        <rdfs:domain rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <rdfs:range rdf:resource="http://www.gryphontology.org/#Magicalilty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gryphontology.org/is_part_of_religious_mythology -->
+
+    <owl:ObjectProperty rdf:about="http://www.gryphontology.org/is_part_of_religious_mythology">
+        <rdfs:domain rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <rdfs:range rdf:resource="http://www.gryphontology.org/Religion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gryphontology.org/is_seductive -->
+
+    <owl:ObjectProperty rdf:about="http://www.gryphontology.org/is_seductive">
+        <rdfs:domain rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <rdfs:range rdf:resource="http://www.gryphontology.org/Behavior"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gryphontology.org/is_size -->
+
+    <owl:ObjectProperty rdf:about="http://www.gryphontology.org/is_size">
+        <rdfs:domain rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <rdfs:range rdf:resource="http://www.gryphontology.org/Size"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.gryphontology.org/is_uniformly_gendered -->
+
+    <owl:ObjectProperty rdf:about="http://www.gryphontology.org/is_uniformly_gendered">
+        <rdfs:domain rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <rdfs:range rdf:resource="http://www.gryphontology.org/#Gender"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.gryphontology.org/anatomy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.gryphontology.org/anatomy"/>
+    
+
+
+    <!-- http://www.gryphontology.org/furry -->
+
+    <owl:DatatypeProperty rdf:about="http://www.gryphontology.org/furry">
+        <rdfs:subPropertyOf rdf:resource="http://www.gryphontology.org/anatomy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gryphontology.org/number_of_heads -->
+
+    <owl:DatatypeProperty rdf:about="http://www.gryphontology.org/number_of_heads">
+        <rdfs:subPropertyOf rdf:resource="http://www.gryphontology.org/anatomy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gryphontology.org/number_of_horns -->
+
+    <owl:DatatypeProperty rdf:about="http://www.gryphontology.org/number_of_horns">
+        <rdfs:subPropertyOf rdf:resource="http://www.gryphontology.org/anatomy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gryphontology.org/number_of_tails -->
+
+    <owl:DatatypeProperty rdf:about="http://www.gryphontology.org/number_of_tails">
+        <rdfs:subPropertyOf rdf:resource="http://www.gryphontology.org/anatomy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gryphontology.org/scaly -->
+
+    <owl:DatatypeProperty rdf:about="http://www.gryphontology.org/scaly">
+        <rdfs:subPropertyOf rdf:resource="http://www.gryphontology.org/anatomy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gryphontology.org/venomous -->
+
+    <owl:DatatypeProperty rdf:about="http://www.gryphontology.org/venomous">
+        <rdfs:subPropertyOf rdf:resource="http://www.gryphontology.org/anatomy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.gryphontology.org/#identifier_wikidata -->
+
+    <owl:DatatypeProperty rdf:about="http://www.gryphontology.org/#identifier_wikidata">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For associating a concept or individual with a wikidata item</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.gryphontology.org/Anatomical_Feature -->
+
+    <owl:Class rdf:about="http://www.gryphontology.org/Anatomical_Feature"/>
+    
+
+
+    <!-- http://www.gryphontology.org/Archetype -->
+
+    <owl:Class rdf:about="http://www.gryphontology.org/Archetype"/>
+    
+
+
+    <!-- http://www.gryphontology.org/Behavior -->
+
+    <owl:Class rdf:about="http://www.gryphontology.org/Behavior"/>
+    
+
+
+    <!-- http://www.gryphontology.org/Civilization -->
+
+    <owl:Class rdf:about="http://www.gryphontology.org/Civilization"/>
+    
+
+
+    <!-- http://www.gryphontology.org/Corporeality -->
+
+    <owl:Class rdf:about="http://www.gryphontology.org/Corporeality"/>
+    
+
+
+    <!-- http://www.gryphontology.org/Country -->
+
+    <owl:Class rdf:about="http://www.gryphontology.org/Country"/>
+    
+
+
+    <!-- http://www.gryphontology.org/Creature -->
+
+    <owl:Class rdf:about="http://www.gryphontology.org/Creature"/>
+    
+
+
+    <!-- http://www.gryphontology.org/Real_Creature -->
+
+    <owl:Class rdf:about="http://www.gryphontology.org/Real_Creature">
+        <rdfs:subClassOf rdf:resource="http://www.gryphontology.org/Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gryphontology.org/Region -->
+
+    <owl:Class rdf:about="http://www.gryphontology.org/Region"/>
+    
+
+
+    <!-- http://www.gryphontology.org/Religion -->
+
+    <owl:Class rdf:about="http://www.gryphontology.org/Religion"/>
+    
+
+
+    <!-- http://www.gryphontology.org/Sex -->
+
+    <owl:Class rdf:about="http://www.gryphontology.org/Sex"/>
+    
+
+
+    <!-- http://www.gryphontology.org/Size -->
+
+    <owl:Class rdf:about="http://www.gryphontology.org/Size"/>
+    
+
+
+    <!-- http://www.gryphontology.org/#Feeding_Habit -->
+
+    <owl:Class rdf:about="http://www.gryphontology.org/#Feeding_Habit">
+        <owl:equivalentClass rdf:resource="http://www.wikidata.org/entity/Q3281331"/>
+        <rdfs:subClassOf rdf:resource="http://www.gryphontology.org/Behavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gryphontology.org/#Flight_Capability -->
+
+    <owl:Class rdf:about="http://www.gryphontology.org/#Flight_Capability">
+        <rdfs:subClassOf rdf:resource="http://www.gryphontology.org/Behavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gryphontology.org/#Gender -->
+
+    <owl:Class rdf:about="http://www.gryphontology.org/#Gender"/>
+    
+
+
+    <!-- http://www.gryphontology.org/#Habitat -->
+
+    <owl:Class rdf:about="http://www.gryphontology.org/#Habitat"/>
+    
+
+
+    <!-- http://www.gryphontology.org/#Magicalilty -->
+
+    <owl:Class rdf:about="http://www.gryphontology.org/#Magicalilty"/>
+    
+
+
+    <!-- http://www.gryphontology.org/#Moral_Polarity -->
+
+    <owl:Class rdf:about="http://www.gryphontology.org/#Moral_Polarity"/>
+    
+
+
+    <!-- http://www.gryphontology.org/#Mortality -->
+
+    <owl:Class rdf:about="http://www.gryphontology.org/#Mortality"/>
+    
+
+
+    <!-- http://www.gryphontology.org/#Mythological_Creature -->
+
+    <owl:Class rdf:about="http://www.gryphontology.org/#Mythological_Creature">
+        <owl:equivalentClass rdf:resource="http://www.wikidata.org/entity/Q15410431"/>
+        <rdfs:subClassOf rdf:resource="http://www.gryphontology.org/Creature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gryphontology.org/#Rhythm_Cycle -->
+
+    <owl:Class rdf:about="http://www.gryphontology.org/#Rhythm_Cycle">
+        <rdfs:subClassOf rdf:resource="http://www.gryphontology.org/Behavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.gryphontology.org/#Sentience -->
+
+    <owl:Class rdf:about="http://www.gryphontology.org/#Sentience"/>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q15410431 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q15410431"/>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q3281331 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q3281331"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.gryphontology.org/Aerial -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Aerial">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Flight_Capability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Africa -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Africa">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Americas -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Americas">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Ancient_Egypt -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Ancient_Egypt">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Civilization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Ancient_Greece -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Ancient_Greece">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Civilization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Ancient_Rome -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Ancient_Rome">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Civilization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Angelic -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Angelic">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Archetype"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Ape -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Ape">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Real_Creature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Aquatic -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Aquatic">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Habitat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Asia -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Asia">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Bear -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Bear">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Real_Creature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Bird -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Bird">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Real_Creature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/British_Isles -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/British_Isles">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Canine -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Canine">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Real_Creature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Carnivore -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Carnivore">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Feeding_Habit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Christianity -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Christianity">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Religion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Corporeal -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Corporeal">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Corporeality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Cow -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Cow">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Real_Creature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Crepuscular -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Crepuscular">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Rhythm_Cycle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Deer -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Deer">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Real_Creature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Diminutive -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Diminutive">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Size"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Diurnal -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Diurnal">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Rhythm_Cycle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Draconic -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Draconic">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Archetype"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Egypt -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Egypt">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Country"/>
+        <found_in_country rdf:resource="http://www.gryphontology.org/Egypt"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Europe -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Europe">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Evil -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Evil">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Moral_Polarity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Extant -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Extant">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mortality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Extinct -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Extinct">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mortality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Fairy-like -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Fairy-like">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Archetype"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Feline -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Feline">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Real_Creature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Female -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Female">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Sex"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Fire-breathing -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Fire-breathing">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Behavior"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Fish -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Fish">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Real_Creature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Fur -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Fur">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Anatomical_Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Gender-variant -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Gender-variant">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Gender"/>
+        <rdfs:label xml:lang="en">Gender-variant</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Germany -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Germany">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Giant -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Giant">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Size"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Goat -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Goat">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Real_Creature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Good -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Good">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Moral_Polarity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Greece -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Greece">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Herbivore -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Herbivore">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Feeding_Habit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Horse -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Horse">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Real_Creature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Human -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Human">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Real_Creature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Intersex -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Intersex">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Sex"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Islam -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Islam">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Religion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Italy -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Italy">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Judaism -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Judaism">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Religion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Magical -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Magical">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Magicalilty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Male -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Male">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Sex"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Man -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Man">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Gender"/>
+        <rdfs:label xml:lang="en">Man/Masculine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Mediterranean -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Mediterranean">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Middle_East -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Middle_East">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Neutral -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Neutral">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Moral_Polarity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Nocturnal -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Nocturnal">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Rhythm_Cycle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Non-aerial -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Non-aerial">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Flight_Capability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Non-corporeal -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Non-corporeal">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Corporeality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Non-magical -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Non-magical">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Magicalilty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Non-sentient -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Non-sentient">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Sentience"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Omnivore -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Omnivore">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Feeding_Habit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Pegasian -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Pegasian">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Archetype"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Petrifying -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Petrifying">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Behavior"/>
+        <wikidata_identifier xml:lang="en">Q7178803</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Pixie -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Pixie">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_mythic_archetype rdf:resource="http://www.gryphontology.org/Fairy-like"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <is_described_in_region rdf:resource="http://www.gryphontology.org/British_Isles"/>
+        <is_magical rdf:resource="http://www.gryphontology.org/Magical"/>
+        <is_size rdf:resource="http://www.gryphontology.org/Diminutive"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Regular-size -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Regular-size">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Size"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Scales -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Scales">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Anatomical_Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Scandinavia -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Scandinavia">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Seductive -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Seductive">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Behavior"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Semi-aquatic -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Semi-aquatic">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Habitat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Sentient -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Sentient">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Sentience"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Shape-shifting -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Shape-shifting">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Behavior"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Snake -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Snake">
+        <rdf:type rdf:resource="http://www.gryphontology.org/Real_Creature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Subterranean -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Subterranean">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Habitat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Terrestrial -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Terrestrial">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Habitat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Undead -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Undead">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mortality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Vampiric -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Vampiric">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Feeding_Habit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/Woman -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/Woman">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Gender"/>
+        <rdfs:label xml:lang="en">Woman/Feminine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Angel -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Angel">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_moral_polarity rdf:resource="http://www.gryphontology.org/Good"/>
+        <has_mortality rdf:resource="http://www.gryphontology.org/Extant"/>
+        <has_mythic_archetype rdf:resource="http://www.gryphontology.org/Angelic"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <is_able_to_fly rdf:resource="http://www.gryphontology.org/Aerial"/>
+        <is_part_of_religious_mythology rdf:resource="http://www.gryphontology.org/Judaism"/>
+        <historical_description xml:lang="en">Angels and Archangels the mind loves to contemplate as the ministers of God&apos;s omnipotence and beneficence, and delights in believing these celestial beings to be endowed with a higher and purer intelligence, and as being nearer to the divine nature. In all ages civilised man has thought of them and represented them in art as of form like to his own, and with attributes of volition and power suggested by wings. (Vinycomb 1906)</historical_description>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q235113</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Apres -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Apres">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <belongs_to_habitat rdf:resource="http://www.gryphontology.org/Terrestrial"/>
+        <has_degree_of_corporeality rdf:resource="http://www.gryphontology.org/Corporeal"/>
+        <has_mortality rdf:resource="http://www.gryphontology.org/Extant"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Bear"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Cow"/>
+        <historical_description xml:lang="en">A fictitious animal resembling a bull, with a short tail like that of a bear. (Vinycomb 1906)</historical_description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Archangel -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Archangel">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_mortality rdf:resource="http://www.gryphontology.org/Extant"/>
+        <has_mythic_archetype rdf:resource="http://www.gryphontology.org/Angelic"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <is_able_to_fly rdf:resource="http://www.gryphontology.org/Aerial"/>
+        <is_part_of_religious_mythology rdf:resource="http://www.gryphontology.org/Judaism"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q178342</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Bagwyn -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Bagwyn">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Goat"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Horse"/>
+        <number_of_horns rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</number_of_horns>
+        <historical_description xml:lang="en">A fabulous beast like the heraldic antelope, but having the tail of a horse, and long horns of a goat curved backwards. (Vinycomb 1906)</historical_description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Baphomet -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Baphomet">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_moral_polarity rdf:resource="http://www.gryphontology.org/Neutral"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <is_uniformly_gendered rdf:resource="http://www.gryphontology.org/Man"/>
+        <is_uniformly_gendered rdf:resource="http://www.gryphontology.org/Woman"/>
+        <number_of_heads rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</number_of_heads>
+        <historical_description xml:lang="en">A fictitious creature having two heads, male and female, the rest of the body female; said to be used as an idol or symbol by the Templars in their mysterious rites. (Vinycomb 1906)</historical_description>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q243362</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Basilisk -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Basilisk">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_moral_polarity rdf:resource="http://www.gryphontology.org/Evil"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Bird"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Snake"/>
+        <historical_description xml:lang="en">The amphysian cockatrice or basilisk in heraldry exactly resembles the cockatrice, but having an additional head (like that of a dragon) at the end of its tail instead of a barb or sting. (...) Its appearance was so dreadful, it was said, that if a mirror was placed so that it could see itself, it would instantly burst asunder with horror and fear. In Christian Art it is the emblem of deadly sin and the spirit of evil. (Vinycomb 1906)</historical_description>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q152519</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Bigfoot -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Bigfoot">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <owl:sameAs rdf:resource="http://www.gryphontology.org/#Sasquatch"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Ape"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q44810</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Blemmyes -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Blemmyes">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <owl:sameAs rdf:resource="http://www.gryphontology.org/#Headless_Men"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Brownie -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Brownie">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_rhythm_cycle rdf:resource="http://www.gryphontology.org/Nocturnal"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q1783949</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Centaur -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Centaur">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Horse"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q83203</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Cerastes -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Cerastes">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Snake"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q5063702</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Cerberus -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Cerberus">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Canine"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Snake"/>
+        <number_of_heads rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</number_of_heads>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q83496</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Cetea -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Cetea">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <belongs_to_habitat rdf:resource="http://www.gryphontology.org/Aquatic"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Fish"/>
+        <is_described_by_civilization rdf:resource="http://www.gryphontology.org/Ancient_Greece"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q3269950</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Cherubim -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Cherubim">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_mythic_archetype rdf:resource="http://www.gryphontology.org/Angelic"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <is_part_of_religious_mythology rdf:resource="http://www.gryphontology.org/Judaism"/>
+        <historical_description xml:lang="en">In representing the cherubim by infants&apos; winged heads, the early painters meant them to be emblematic of a pure spirit glowing with love and intelligence, the head the seat of the soul, and the wings attribute of swiftness and spirit alone retained. (Vinycomb 1906)</historical_description>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q185569</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Chimera -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Chimera">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Feline"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Goat"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Snake"/>
+        <number_of_heads rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</number_of_heads>
+        <number_of_heads rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</number_of_heads>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q182790</wikidata_identifier>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An imaginary fire-breathing monster of great swiftness and strength, invented by the ancient Greek poets. (Vinycomb 1906)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Cockatrice -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Cockatrice">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_moral_polarity rdf:resource="http://www.gryphontology.org/Evil"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Bird"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Snake"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q1371084</wikidata_identifier>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This chimerical creature was said to be produced from a cock&apos;s egg hatched by a serpent; hence its name. It differs from the Wyvern of heraldry only in having a head like that of a dunghill cock. (Vinycomb 1906)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Cyclopes -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Cyclopes">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <is_size rdf:resource="http://www.gryphontology.org/Giant"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q128430</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Dracaenae -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Dracaenae">
+        <owl:sameAs rdf:resource="http://www.gryphontology.org/#Drakaina"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Dragon -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Dragon">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_mythic_archetype rdf:resource="http://www.gryphontology.org/Draconic"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Snake"/>
+        <is_able_to_fly rdf:resource="http://www.gryphontology.org/Aerial"/>
+        <is_described_in_region rdf:resource="http://www.gryphontology.org/Europe"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q7559</wikidata_identifier>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The dragon is the most interesting and most frequently seen of all chimerical figures, and it is a remarkable fact that such a creature appears at an early period of the world&apos;s history to have been known in the East and in countries widely separated. Long anterior to the dawn of civilisation in the West of Europe, even in far-off China and Japan in the extreme East of Asia we find the dragon delineated in very much the same form in which it appears in our national heraldry. The ancients conceived it as the embodiment of malignant and destructive power, and with attributes of the most terrible kind. (Vinycomb 1906)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Drakaina -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Drakaina">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Snake"/>
+        <is_described_by_civilization rdf:resource="http://www.gryphontology.org/Ancient_Greece"/>
+        <is_uniformly_gendered rdf:resource="http://www.gryphontology.org/Woman"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q2330255</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Dryad -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Dryad">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q202474</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Dwarf -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Dwarf">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <belongs_to_habitat rdf:resource="http://www.gryphontology.org/Subterranean"/>
+        <belongs_to_habitat rdf:resource="http://www.gryphontology.org/Terrestrial"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <is_size rdf:resource="http://www.gryphontology.org/Diminutive"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q214045</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Elf -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Elf">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <is_size rdf:resource="http://www.gryphontology.org/Diminutive"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q174396</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Empusa -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Empusa">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <can_shape_shift rdf:resource="http://www.gryphontology.org/Shape-shifting"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <is_described_by_civilization rdf:resource="http://www.gryphontology.org/Ancient_Greece"/>
+        <is_seductive rdf:resource="http://www.gryphontology.org/Seductive"/>
+        <is_uniformly_gendered rdf:resource="http://www.gryphontology.org/Woman"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q903786</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Enfield -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Enfield">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Bird"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Canine"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Feline"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q989686</wikidata_identifier>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An imaginary hybrid animal with the head of a fox, chest of a greyhound, talons of an eagle, and body of a lion; the hind legs and tail of a wolf. (Vinycomb 1906)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Epimacus -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Epimacus">
+        <owl:sameAs rdf:resource="http://www.gryphontology.org/#Opinicus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Fairy -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Fairy">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_mythic_archetype rdf:resource="http://www.gryphontology.org/Fairy-like"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <is_magical rdf:resource="http://www.gryphontology.org/Magical"/>
+        <is_size rdf:resource="http://www.gryphontology.org/Diminutive"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q8028</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Faun -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Faun">
+        <owl:sameAs rdf:resource="http://www.gryphontology.org/#Satyr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Genie -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Genie">
+        <owl:sameAs rdf:resource="http://www.gryphontology.org/#Jinn"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Ghost -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Ghost">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <owl:sameAs rdf:resource="http://www.gryphontology.org/#Spirit"/>
+        <has_degree_of_corporeality rdf:resource="http://www.gryphontology.org/Non-corporeal"/>
+        <has_mortality rdf:resource="http://www.gryphontology.org/Undead"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q45529</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Gnome -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Gnome">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <is_size rdf:resource="http://www.gryphontology.org/Diminutive"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q188215</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Goblin -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Goblin">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <is_size rdf:resource="http://www.gryphontology.org/Diminutive"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q308697</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Golem -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Golem">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q215085</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Gorgon -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Gorgon">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Snake"/>
+        <is_uniformly_gendered rdf:resource="http://www.gryphontology.org/Woman"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q102059</wikidata_identifier>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In classic story there were three gorgons, with serpents on their heads instead of hair. Medusa was the chief of the three, and the only one that was mortal. So hideous was her face that whoever set eyes on it was instantly turned to stone. (Vinycomb 1906)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Griffin -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Griffin">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <owl:sameAs rdf:resource="http://www.gryphontology.org/#Griffon"/>
+        <owl:sameAs rdf:resource="http://www.gryphontology.org/#Gryphon"/>
+        <owl:sameAs rdf:resource="http://www.gryphontology.org/#Opinicus"/>
+        <has_degree_of_corporeality rdf:resource="http://www.gryphontology.org/Corporeal"/>
+        <has_mortality rdf:resource="http://www.gryphontology.org/Extant"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Bird"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Feline"/>
+        <is_able_to_fly rdf:resource="http://www.gryphontology.org/Aerial"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q130223</wikidata_identifier>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fabulous, bird-like species of animals, dwelling in the Rhipaean mountains, between the Hyperboreans and the one-eyed Arimaspians, and guarding the gold of the north. The Arismaspians mounted on horseback, and attempted to steal the gold, and hence arose the hostility between the horse and the griffin. The body of the griffin was that of a lion, while the head and wings were those of an eagle. (Smith 1873)</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The griffin, &quot;sacred to the sun,&quot; combines the bodily attributes of the &quot; cloud-cleaving eagle &quot; and the &quot;king of beasts,&quot; that is, it has the head, neck, wings, and talons of an eagle, conjoined to the hinder parts of a lion. It is usually represented with projecting ears, indicating an acute sense of hearing, in addition to its other supposed extraordinary qualities. (Vinycomb 1906)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Griffon -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Griffon"/>
+    
+
+
+    <!-- http://www.gryphontology.org/#Gryphon -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Gryphon"/>
+    
+
+
+    <!-- http://www.gryphontology.org/#Guardian_Angel -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Guardian_Angel">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_mythic_archetype rdf:resource="http://www.gryphontology.org/Angelic"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <is_part_of_religious_mythology rdf:resource="http://www.gryphontology.org/Judaism"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q728388</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Harpy -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Harpy">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Bird"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <is_uniformly_gendered rdf:resource="http://www.gryphontology.org/Woman"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q181360</wikidata_identifier>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A poetical monstrosity of classical origin, described as &quot;winged creatures having the head and breasts of a woman, and the body and limbs of a vulture; very fierce and loathsome, living in an atmosphere of filth and stench, and contaminating anything which they come near. Pale and emaciated, they were continually tormented with insatiable hunger.&quot; They are best known from the story of the Argonauts, where they appear as the tormentors of the blind king Phineus, whose table they robbed of its viands, which they either devoured or spoiled. They were regarded by the ancients as ministers of sudden death. (Vinycomb 1906)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Headless_Men -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Headless_Men">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <belongs_to_habitat rdf:resource="http://www.gryphontology.org/Terrestrial"/>
+        <has_degree_of_corporeality rdf:resource="http://www.gryphontology.org/Corporeal"/>
+        <has_degree_of_sentience rdf:resource="http://www.gryphontology.org/Sentient"/>
+        <has_mortality rdf:resource="http://www.gryphontology.org/Extant"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <is_able_to_fly rdf:resource="http://www.gryphontology.org/Non-aerial"/>
+        <is_described_by_civilization rdf:resource="http://www.gryphontology.org/Ancient_Greece"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q4925982</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Hydra -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Hydra">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <belongs_to_habitat rdf:resource="http://www.gryphontology.org/Aquatic"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Snake"/>
+        <is_described_by_civilization rdf:resource="http://www.gryphontology.org/Ancient_Greece"/>
+        <is_described_by_civilization rdf:resource="http://www.gryphontology.org/Ancient_Rome"/>
+        <number_of_heads rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</number_of_heads>
+        <number_of_heads rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</number_of_heads>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q170379</wikidata_identifier>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The number of its heads varies with the poets, though ancient gems usually represent it with seven or nine. (Vinycomb 1906)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Imp -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Imp">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <found_in_country rdf:resource="http://www.gryphontology.org/Germany"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <is_size rdf:resource="http://www.gryphontology.org/Diminutive"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q2266278</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Jinn -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Jinn">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_moral_polarity rdf:resource="http://www.gryphontology.org/Neutral"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <is_magical rdf:resource="http://www.gryphontology.org/Magical"/>
+        <is_part_of_religious_mythology rdf:resource="http://www.gryphontology.org/Islam"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q3465</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Kobold -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Kobold">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <is_size rdf:resource="http://www.gryphontology.org/Diminutive"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q1064669</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Lamia -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Lamia">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_moral_polarity rdf:resource="http://www.gryphontology.org/Evil"/>
+        <has_rhythm_cycle rdf:resource="http://www.gryphontology.org/Nocturnal"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Snake"/>
+        <is_described_by_civilization rdf:resource="http://www.gryphontology.org/Ancient_Greece"/>
+        <is_uniformly_gendered rdf:resource="http://www.gryphontology.org/Woman"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q200073</wikidata_identifier>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is said to be &quot;the swiftest of all four-footed creatures, that it is very treacherous and cruel to men. It is stated to be bred in Lybia, and sometimes devours its own young.&quot; It is represented in an ancient &quot;Bestiaria&quot; as having the head and breasts of a woman, and the body of a four-footed animal with flowing tail, the hind feet having divided hoofs. (Vinycomb 1906)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Loch_Ness_Monster -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Loch_Ness_Monster">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <owl:sameAs rdf:resource="http://www.gryphontology.org/#Nessie"/>
+        <belongs_to_habitat rdf:resource="http://www.gryphontology.org/Aquatic"/>
+        <has_degree_of_corporeality rdf:resource="http://www.gryphontology.org/Corporeal"/>
+        <is_able_to_fly rdf:resource="http://www.gryphontology.org/Non-aerial"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q49658</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Lycanthrope -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Lycanthrope">
+        <owl:sameAs rdf:resource="http://www.gryphontology.org/#Werewolf"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Manticore -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Manticore">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Feline"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q223795</wikidata_identifier>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A chimerical creature of mediaeval invention, having the body of an heraldic tiger with mane, and the head of an old man with long spiral horns. Some heraldic authorities make the horns more like those of an ox, and the feet like a dragon&apos;s. (Vinycomb 1906)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Mermaid -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Mermaid">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <belongs_to_habitat rdf:resource="http://www.gryphontology.org/Aquatic"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Fish"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <is_uniformly_gendered rdf:resource="http://www.gryphontology.org/Woman"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q182559</wikidata_identifier>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This fabulous creature of the sea, well known in ancient and modern times as the frequent theme of poets and the subject of numberless legends, has from a very early date been a favourite device. She is usually represented in heraldry as having the upper part the head and body of a beautiful young woman, holding a comb and glass in her hands, the lower part ending in a fish. (Vinycomb 1906)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Merman -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Merman">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <owl:sameAs rdf:resource="http://www.gryphontology.org/#Triton"/>
+        <belongs_to_habitat rdf:resource="http://www.gryphontology.org/Aquatic"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Fish"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <is_uniformly_gendered rdf:resource="http://www.gryphontology.org/Man"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q4995044</wikidata_identifier>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Triton was the only son of Neptune and Amphitrite. The poet Apollonius Rhodius describes him as having the upper parts of the body of a man, while the lower parts were those of a dolphin. Later poets and artists revelled in the conception of a whole race of similar tritons, who were regarded as a wanton, mischievous tribe, like the satyrs on land. (Vinycomb 1906)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Mummy -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Mummy">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <belongs_to_habitat rdf:resource="http://www.gryphontology.org/Subterranean"/>
+        <found_in_country rdf:resource="http://www.gryphontology.org/Egypt"/>
+        <has_mortality rdf:resource="http://www.gryphontology.org/Undead"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q43616</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Nephilim -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Nephilim">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <is_size rdf:resource="http://www.gryphontology.org/Giant"/>
+        <wikidata_identifier>Q747737</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Nessie -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Nessie"/>
+    
+
+
+    <!-- http://www.gryphontology.org/#Nymph -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Nymph">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_degree_of_sentience rdf:resource="http://www.gryphontology.org/Sentient"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <is_uniformly_gendered rdf:resource="http://www.gryphontology.org/Woman"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q373916</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Opinicus -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Opinicus">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This creature appears to be a variety of the griffin family. Authorities blazon it as having its body and four legs like those of a lion; the head and neck and wings like an eagle, and the short tail of a camel, sometimes borne sans wings. (Vinycomb 1906)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Panotti -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Panotti">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <is_described_by_civilization rdf:resource="http://www.gryphontology.org/Ancient_Greece"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q2049776</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Pegasus -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Pegasus">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_mythic_archetype rdf:resource="http://www.gryphontology.org/Pegasian"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Bird"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Horse"/>
+        <is_able_to_fly rdf:resource="http://www.gryphontology.org/Aerial"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A poetic creation of the ancients, a winged horse captured by Bellerophon, the great hero of Corinthian legend. (Vinycomb 1906)</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In consequence of some false charges brought against him, Bellerophon was sent to combat with a monster called the Chimæra, in the expectation that he would perish in the attempt; but Minerva, pitying his situation, provided him with a winged horse, named Pegasus, by means of which he accomplished his perilous task in safety. (Pliny/Bostock 1855)</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Æthiopia produces the lynx in abundance, and the sphinx, which has brown hair and two mammæ on the breast, as well as many monstrous kinds of a similar nature; horses with wings, and armed with horns, which are called pegasi...&quot; (Pliny/Bostock 1855)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Phoenix -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Phoenix">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_degree_of_corporeality rdf:resource="http://www.gryphontology.org/Corporeal"/>
+        <has_moral_polarity rdf:resource="http://www.gryphontology.org/Good"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Bird"/>
+        <is_able_to_fly rdf:resource="http://www.gryphontology.org/Aerial"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An imaginary bird, described by ancient writers as in form like an eagle, but more beautiful in its plumage. Among the ancient classical writers it was an emblem of those existing in paradise, enjoying eternal youth and never-ending pleasure. (Vinycomb 1906)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Praying_Angel -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Praying_Angel">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_mythic_archetype rdf:resource="http://www.gryphontology.org/Angelic"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <is_part_of_religious_mythology rdf:resource="http://www.gryphontology.org/Judaism"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Recording_Angel -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Recording_Angel">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_mythic_archetype rdf:resource="http://www.gryphontology.org/Angelic"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <is_part_of_religious_mythology rdf:resource="http://www.gryphontology.org/Judaism"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q11631135</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Sasquatch -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Sasquatch"/>
+    
+
+
+    <!-- http://www.gryphontology.org/#Satyr -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Satyr">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Horse"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <is_uniformly_gendered rdf:resource="http://www.gryphontology.org/Man"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q163709</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Satyress -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Satyress">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Horse"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <is_uniformly_gendered rdf:resource="http://www.gryphontology.org/Woman"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q7426959</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Sea_Goat -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Sea_Goat">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <belongs_to_habitat rdf:resource="http://www.gryphontology.org/Aquatic"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Fish"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Goat"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q3503382</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Seraph -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Seraph">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_mythic_archetype rdf:resource="http://www.gryphontology.org/Angelic"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <is_part_of_religious_mythology rdf:resource="http://www.gryphontology.org/Judaism"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q194077</wikidata_identifier>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The seraphim are regarded as an order of angels distinguished for fervent zeal and religious ardour. The word means &quot; burning,&quot; i.e., with Divine Love. (Vinycomb 1906)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Shade -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Shade">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <belongs_to_habitat rdf:resource="http://www.gryphontology.org/Subterranean"/>
+        <has_degree_of_corporeality rdf:resource="http://www.gryphontology.org/Non-corporeal"/>
+        <has_mortality rdf:resource="http://www.gryphontology.org/Undead"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q7460262</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Siren -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Siren">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <belongs_to_habitat rdf:resource="http://www.gryphontology.org/Aquatic"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Fish"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <is_seductive rdf:resource="http://www.gryphontology.org/Seductive"/>
+        <is_uniformly_gendered rdf:resource="http://www.gryphontology.org/Woman"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q150986</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Sphingium -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Sphingium">
+        <owl:sameAs rdf:resource="http://www.gryphontology.org/#Sphinx"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Sphinx -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Sphinx">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <found_in_country rdf:resource="http://www.gryphontology.org/Egypt"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Bird"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Feline"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <is_able_to_fly rdf:resource="http://www.gryphontology.org/Aerial"/>
+        <is_described_by_civilization rdf:resource="http://www.gryphontology.org/Ancient_Greece"/>
+        <is_uniformly_gendered rdf:resource="http://www.gryphontology.org/Woman"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q151480</wikidata_identifier>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hera sent the Sphinx, whose mother was Echidna and her father Typhon; and she had the face of a woman, the breast and feet and tail of a lion, and the wings of a bird. (Apollodorus/Frazer 1921)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Spirit -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Spirit"/>
+    
+
+
+    <!-- http://www.gryphontology.org/#Sprite -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Sprite">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_degree_of_corporeality rdf:resource="http://www.gryphontology.org/Corporeal"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <is_magical rdf:resource="http://www.gryphontology.org/Magical"/>
+        <is_size rdf:resource="http://www.gryphontology.org/Diminutive"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q20828805</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Triton -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Triton"/>
+    
+
+
+    <!-- http://www.gryphontology.org/#Troll -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Troll">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <belongs_to_habitat rdf:resource="http://www.gryphontology.org/Subterranean"/>
+        <belongs_to_habitat rdf:resource="http://www.gryphontology.org/Terrestrial"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <is_able_to_fly rdf:resource="http://www.gryphontology.org/Non-aerial"/>
+        <is_described_in_region rdf:resource="http://www.gryphontology.org/Scandinavia"/>
+        <is_size rdf:resource="http://www.gryphontology.org/Giant"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q12581</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Unicorn -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Unicorn">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_moral_polarity rdf:resource="http://www.gryphontology.org/Good"/>
+        <has_mythic_archetype rdf:resource="http://www.gryphontology.org/Pegasian"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Deer"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Feline"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Horse"/>
+        <number_of_horns rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</number_of_horns>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q7246</wikidata_identifier>
+        <rdfs:comment xml:lang="en">The Unicorn is a Creature about the bigness of a Horse, he hath the beard of a Goat, the head of a Hart, he hath a neck with a large main, he hath the feet of an Elephant, the tayl of a Hog, he hath one black horn in the middle of his forehead about two cubits long. (Franzius 1670)</rdfs:comment>
+        <rdfs:comment xml:lang="en">The pegasus and the rhinoceros together may have given rise to that fabulous animal, the unicorn. (Pliny/Bostock 1855)</rdfs:comment>
+        <rdfs:comment xml:lang="en">The unicorn is represented by heraldic usage as having the head and body of a horse, with the tail of a lion, and the limbs and hoofs of a stag; a twisted horn grows out from the centre of its forehead. (...) The unicorn was a famous device all over Europe, and symbolised the virtue of the mind and the strength of the body. (Vinycomb 1906)</rdfs:comment>
+        <rdfs:label xml:lang="en">Unicorn</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Vampire -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Vampire">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_degree_of_corporeality rdf:resource="http://www.gryphontology.org/Corporeal"/>
+        <has_degree_of_sentience rdf:resource="http://www.gryphontology.org/Sentient"/>
+        <has_feeding_habit rdf:resource="http://www.gryphontology.org/Vampiric"/>
+        <has_moral_polarity rdf:resource="http://www.gryphontology.org/Evil"/>
+        <has_mortality rdf:resource="http://www.gryphontology.org/Undead"/>
+        <has_rhythm_cycle rdf:resource="http://www.gryphontology.org/Nocturnal"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Feline"/>
+        <is_seductive rdf:resource="http://www.gryphontology.org/Seductive"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q46721</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Werewolf -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Werewolf">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_degree_of_corporeality rdf:resource="http://www.gryphontology.org/Corporeal"/>
+        <has_feeding_habit rdf:resource="http://www.gryphontology.org/Carnivore"/>
+        <has_moral_polarity rdf:resource="http://www.gryphontology.org/Evil"/>
+        <has_mortality rdf:resource="http://www.gryphontology.org/Extant"/>
+        <has_rhythm_cycle rdf:resource="http://www.gryphontology.org/Nocturnal"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Canine"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <is_able_to_fly rdf:resource="http://www.gryphontology.org/Non-aerial"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q9410</wikidata_identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Wyvern -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Wyvern">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <has_mortality rdf:resource="http://www.gryphontology.org/Extant"/>
+        <has_mythic_archetype rdf:resource="http://www.gryphontology.org/Draconic"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Bird"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Snake"/>
+        <is_able_to_fly rdf:resource="http://www.gryphontology.org/Aerial"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q862809</wikidata_identifier>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Said to represent a flying serpent, an imaginary creature resembling the dragon, but having only two legs, which are like an eagle&apos;s, and a serpent-like tail, barbed, sometimes represented nowed after the manner of serpents. (Vinycomb 1906)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.gryphontology.org/#Zombie -->
+
+    <owl:NamedIndividual rdf:about="http://www.gryphontology.org/#Zombie">
+        <rdf:type rdf:resource="http://www.gryphontology.org/#Mythological_Creature"/>
+        <belongs_to_habitat rdf:resource="http://www.gryphontology.org/Terrestrial"/>
+        <has_degree_of_corporeality rdf:resource="http://www.gryphontology.org/Corporeal"/>
+        <has_degree_of_sentience rdf:resource="http://www.gryphontology.org/Non-sentient"/>
+        <has_mortality rdf:resource="http://www.gryphontology.org/Undead"/>
+        <has_rhythm_cycle rdf:resource="http://www.gryphontology.org/Nocturnal"/>
+        <has_traits_of_animal rdf:resource="http://www.gryphontology.org/Human"/>
+        <is_able_to_fly rdf:resource="http://www.gryphontology.org/Non-aerial"/>
+        <wikidata_identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q9406</wikidata_identifier>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
