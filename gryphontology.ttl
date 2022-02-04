@@ -1,0 +1,1453 @@
+@prefix : <http://www.gryphontology.org/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wikidata: <https://www.wikidata.org/wiki/Special:EntityData/> .
+@base <http://www.gryphontology.org/> .
+
+<http://www.gryphontology.org/> rdf:type owl:Ontology ;
+                                 dc:contributor "Taylor Howard (She/Her/Hers)"@en ;
+                                 dc:description "An open-source formal ontology of legendary creatures from around the world."@en ;
+                                 dc:title "GryphOntology"@en ;
+                                 rdfs:seeAlso "https://github.com/taylorisveryonline/gryphontology"@en ;
+                                 owl:versionInfo "2022-02-03"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/contributor
+dc:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+dc:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/subject
+dc:subject rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
+
+###  http://www.gryphontology.org/historical_description
+:historical_description rdf:type owl:AnnotationProperty ;
+                        rdfs:range rdf:PlainLiteral .
+
+
+###  http://www.gryphontology.org/wikidata_identifier
+:wikidata_identifier rdf:type owl:AnnotationProperty ;
+                     rdfs:range xsd:string .
+
+
+###  http://www.w3.org/2002/07/owl#equivalentClass
+owl:equivalentClass rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.gryphontology.org/belongs_to_habitat
+:belongs_to_habitat rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Mythological_Creature ;
+                    rdfs:range :Habitat .
+
+
+###  http://www.gryphontology.org/exhibits_behavior
+:exhibits_behavior rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Mythological_Creature ;
+                   rdfs:range :Behavior .
+
+
+###  http://www.gryphontology.org/found_in_country
+:found_in_country rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Mythological_Creature ;
+                  rdfs:range :Country .
+
+
+###  http://www.gryphontology.org/has_degree_of_corporeality
+:has_degree_of_corporeality rdf:type owl:ObjectProperty ;
+                            rdfs:domain :Mythological_Creature ;
+                            rdfs:range :Corporeality .
+
+
+###  http://www.gryphontology.org/has_degree_of_sentience
+:has_degree_of_sentience rdf:type owl:ObjectProperty ;
+                         rdfs:domain :Mythological_Creature ;
+                         rdfs:range :Sentience .
+
+
+###  http://www.gryphontology.org/has_feeding_habit
+:has_feeding_habit rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Mythological_Creature ;
+                   rdfs:range :Feeding_Habit .
+
+
+###  http://www.gryphontology.org/has_fur
+:has_fur rdf:type owl:ObjectProperty .
+
+
+###  http://www.gryphontology.org/has_moral_polarity
+:has_moral_polarity rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Mythological_Creature ;
+                    rdfs:range :Moral_Polarity .
+
+
+###  http://www.gryphontology.org/has_mortality
+:has_mortality rdf:type owl:ObjectProperty ;
+               rdfs:domain :Mythological_Creature ;
+               rdfs:range :Mortality .
+
+
+###  http://www.gryphontology.org/has_mythic_archetype
+:has_mythic_archetype rdf:type owl:ObjectProperty ;
+                      rdfs:domain :Mythological_Creature ;
+                      rdfs:range :Archetype .
+
+
+###  http://www.gryphontology.org/has_rhythm_cycle
+:has_rhythm_cycle rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Mythological_Creature ;
+                  rdfs:range :Rhythm_Cycle .
+
+
+###  http://www.gryphontology.org/has_scales
+:has_scales rdf:type owl:ObjectProperty .
+
+
+###  http://www.gryphontology.org/has_traits_of_animal
+:has_traits_of_animal rdf:type owl:ObjectProperty ;
+                      rdfs:domain :Mythological_Creature ;
+                      rdfs:range :Real_Creature .
+
+
+###  http://www.gryphontology.org/is_able_to_fly
+:is_able_to_fly rdf:type owl:ObjectProperty ;
+                rdfs:domain :Mythological_Creature ;
+                rdfs:range :Flight_Capability .
+
+
+###  http://www.gryphontology.org/is_described_by_civilization
+:is_described_by_civilization rdf:type owl:ObjectProperty ;
+                              rdfs:domain :Mythological_Creature ;
+                              rdfs:range :Civilization .
+
+
+###  http://www.gryphontology.org/is_described_in_region
+:is_described_in_region rdf:type owl:ObjectProperty ;
+                        rdfs:domain :Mythological_Creature ;
+                        rdfs:range :Region .
+
+
+###  http://www.gryphontology.org/is_magical
+:is_magical rdf:type owl:ObjectProperty ;
+            rdfs:domain :Mythological_Creature ;
+            rdfs:range :Magicalilty .
+
+
+###  http://www.gryphontology.org/is_part_of_religious_mythology
+:is_part_of_religious_mythology rdf:type owl:ObjectProperty ;
+                                rdfs:domain :Mythological_Creature ;
+                                rdfs:range :Religion .
+
+
+###  http://www.gryphontology.org/is_size
+:is_size rdf:type owl:ObjectProperty ;
+         rdfs:domain :Mythological_Creature ;
+         rdfs:range :Size .
+
+
+###  http://www.gryphontology.org/is_uniformly_gendered
+:is_uniformly_gendered rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Mythological_Creature ;
+                       rdfs:range :Gender .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.gryphontology.org/anatomy
+:anatomy rdf:type owl:DatatypeProperty .
+
+
+###  http://www.gryphontology.org/furry
+:furry rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf :anatomy ;
+       rdfs:range xsd:boolean .
+
+
+###  http://www.gryphontology.org/identifier_wikidata
+:identifier_wikidata rdf:type owl:DatatypeProperty ;
+                     rdfs:range xsd:string ;
+                     rdfs:comment "For associating a concept or individual with a wikidata item"^^xsd:string .
+
+
+###  http://www.gryphontology.org/number_of_heads
+:number_of_heads rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :anatomy ;
+                 rdfs:range xsd:integer .
+
+
+###  http://www.gryphontology.org/number_of_horns
+:number_of_horns rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :anatomy ;
+                 rdfs:range xsd:integer .
+
+
+###  http://www.gryphontology.org/number_of_tails
+:number_of_tails rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :anatomy ;
+                 rdfs:range xsd:integer .
+
+
+###  http://www.gryphontology.org/scaly
+:scaly rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf :anatomy ;
+       rdfs:range xsd:boolean .
+
+
+###  http://www.gryphontology.org/venomous
+:venomous rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf :anatomy ;
+          rdfs:range xsd:boolean .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.gryphontology.org/Anatomical_Feature
+:Anatomical_Feature rdf:type owl:Class .
+
+
+###  http://www.gryphontology.org/Archetype
+:Archetype rdf:type owl:Class .
+
+
+###  http://www.gryphontology.org/Behavior
+:Behavior rdf:type owl:Class .
+
+
+###  http://www.gryphontology.org/Civilization
+:Civilization rdf:type owl:Class .
+
+
+###  http://www.gryphontology.org/Corporeality
+:Corporeality rdf:type owl:Class .
+
+
+###  http://www.gryphontology.org/Country
+:Country rdf:type owl:Class .
+
+
+###  http://www.gryphontology.org/Creature
+:Creature rdf:type owl:Class .
+
+
+###  http://www.gryphontology.org/Feeding_Habit
+:Feeding_Habit rdf:type owl:Class ;
+               owl:equivalentClass <http://www.wikidata.org/entity/Q3281331> ;
+               rdfs:subClassOf :Behavior .
+
+
+###  http://www.gryphontology.org/Flight_Capability
+:Flight_Capability rdf:type owl:Class ;
+                   rdfs:subClassOf :Behavior .
+
+
+###  http://www.gryphontology.org/Gender
+:Gender rdf:type owl:Class .
+
+
+###  http://www.gryphontology.org/Habitat
+:Habitat rdf:type owl:Class .
+
+
+###  http://www.gryphontology.org/Magicalilty
+:Magicalilty rdf:type owl:Class .
+
+
+###  http://www.gryphontology.org/Moral_Polarity
+:Moral_Polarity rdf:type owl:Class .
+
+
+###  http://www.gryphontology.org/Mortality
+:Mortality rdf:type owl:Class .
+
+
+###  http://www.gryphontology.org/Mythological_Creature
+:Mythological_Creature rdf:type owl:Class ;
+                       owl:equivalentClass <http://www.wikidata.org/entity/Q15410431> ;
+                       rdfs:subClassOf :Creature .
+
+
+###  http://www.gryphontology.org/Real_Creature
+:Real_Creature rdf:type owl:Class ;
+               rdfs:subClassOf :Creature .
+
+
+###  http://www.gryphontology.org/Region
+:Region rdf:type owl:Class .
+
+
+###  http://www.gryphontology.org/Religion
+:Religion rdf:type owl:Class .
+
+
+###  http://www.gryphontology.org/Rhythm_Cycle
+:Rhythm_Cycle rdf:type owl:Class ;
+              rdfs:subClassOf :Behavior .
+
+
+###  http://www.gryphontology.org/Sentience
+:Sentience rdf:type owl:Class .
+
+
+###  http://www.gryphontology.org/Sex
+:Sex rdf:type owl:Class .
+
+
+###  http://www.gryphontology.org/Size
+:Size rdf:type owl:Class .
+
+
+###  http://www.wikidata.org/entity/Q15410431
+<http://www.wikidata.org/entity/Q15410431> rdf:type owl:Class .
+
+
+###  http://www.wikidata.org/entity/Q3281331
+<http://www.wikidata.org/entity/Q3281331> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.gryphontology.org/Aerial
+:Aerial rdf:type owl:NamedIndividual ,
+                 :Flight_Capability .
+
+
+###  http://www.gryphontology.org/Africa
+:Africa rdf:type owl:NamedIndividual ,
+                 :Region .
+
+
+###  http://www.gryphontology.org/Americas
+:Americas rdf:type owl:NamedIndividual ,
+                   :Region .
+
+
+###  http://www.gryphontology.org/Ancient_Egypt
+:Ancient_Egypt rdf:type owl:NamedIndividual ,
+                        :Civilization .
+
+
+###  http://www.gryphontology.org/Ancient_Greece
+:Ancient_Greece rdf:type owl:NamedIndividual ,
+                         :Civilization .
+
+
+###  http://www.gryphontology.org/Ancient_Rome
+:Ancient_Rome rdf:type owl:NamedIndividual ,
+                       :Civilization .
+
+
+###  http://www.gryphontology.org/Angel
+:Angel rdf:type owl:NamedIndividual ,
+                :Mythological_Creature ;
+       :has_moral_polarity :Good ;
+       :has_mortality :Extant ;
+       :has_mythic_archetype :Angelic ;
+       :has_traits_of_animal :Human ;
+       :is_able_to_fly :Aerial ;
+       :is_part_of_religious_mythology :Judaism ;
+       :historical_description "Angels and Archangels the mind loves to contemplate as the ministers of God's omnipotence and beneficence, and delights in believing these celestial beings to be endowed with a higher and purer intelligence, and as being nearer to the divine nature. In all ages civilised man has thought of them and represented them in art as of form like to his own, and with attributes of volition and power suggested by wings. (Vinycomb 1906)"@en ;
+       :wikidata_identifier "Q235113"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Angelic
+:Angelic rdf:type owl:NamedIndividual ,
+                  :Archetype .
+
+
+###  http://www.gryphontology.org/Ape
+:Ape rdf:type owl:NamedIndividual ,
+              :Real_Creature .
+
+
+###  http://www.gryphontology.org/Apres
+:Apres rdf:type owl:NamedIndividual ,
+                :Mythological_Creature ;
+       :belongs_to_habitat :Terrestrial ;
+       :has_degree_of_corporeality :Corporeal ;
+       :has_mortality :Extant ;
+       :has_traits_of_animal :Bear ,
+                             :Cow ;
+       :historical_description "A fictitious animal resembling a bull, with a short tail like that of a bear. (Vinycomb 1906)"@en .
+
+
+###  http://www.gryphontology.org/Aquatic
+:Aquatic rdf:type owl:NamedIndividual ,
+                  :Habitat .
+
+
+###  http://www.gryphontology.org/Archangel
+:Archangel rdf:type owl:NamedIndividual ,
+                    :Mythological_Creature ;
+           :has_mortality :Extant ;
+           :has_mythic_archetype :Angelic ;
+           :has_traits_of_animal :Human ;
+           :is_able_to_fly :Aerial ;
+           :is_part_of_religious_mythology :Judaism ;
+           :wikidata_identifier "Q178342"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Asia
+:Asia rdf:type owl:NamedIndividual ,
+               :Region .
+
+
+###  http://www.gryphontology.org/Bagwyn
+:Bagwyn rdf:type owl:NamedIndividual ,
+                 :Mythological_Creature ;
+        :has_traits_of_animal :Goat ,
+                              :Horse ;
+        :number_of_horns 2 ;
+        :historical_description "A fabulous beast like the heraldic antelope, but having the tail of a horse, and long horns of a goat curved backwards. (Vinycomb 1906)"@en .
+
+
+###  http://www.gryphontology.org/Baphomet
+:Baphomet rdf:type owl:NamedIndividual ,
+                   :Mythological_Creature ;
+          :has_moral_polarity :Neutral ;
+          :has_traits_of_animal :Human ;
+          :is_uniformly_gendered :Man ,
+                                 :Woman ;
+          :number_of_heads 2 ;
+          :historical_description "A fictitious creature having two heads, male and female, the rest of the body female; said to be used as an idol or symbol by the Templars in their mysterious rites. (Vinycomb 1906)"@en ;
+          :wikidata_identifier "Q243362"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Basilisk
+:Basilisk rdf:type owl:NamedIndividual ,
+                   :Mythological_Creature ;
+          :has_moral_polarity :Evil ;
+          :has_traits_of_animal :Bird ,
+                                :Snake ;
+          :historical_description "The amphysian cockatrice or basilisk in heraldry exactly resembles the cockatrice, but having an additional head (like that of a dragon) at the end of its tail instead of a barb or sting. (...) Its appearance was so dreadful, it was said, that if a mirror was placed so that it could see itself, it would instantly burst asunder with horror and fear. In Christian Art it is the emblem of deadly sin and the spirit of evil. (Vinycomb 1906)"@en ;
+          :wikidata_identifier "Q152519"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Bear
+:Bear rdf:type owl:NamedIndividual ,
+               :Real_Creature .
+
+
+###  http://www.gryphontology.org/Bigfoot
+:Bigfoot rdf:type owl:NamedIndividual ,
+                  :Mythological_Creature ;
+         owl:sameAs :Sasquatch ;
+         :has_traits_of_animal :Ape ;
+         :wikidata_identifier "Q44810"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Bird
+:Bird rdf:type owl:NamedIndividual ,
+               :Real_Creature .
+
+
+###  http://www.gryphontology.org/Blemmyes
+:Blemmyes rdf:type owl:NamedIndividual ,
+                   :Mythological_Creature ;
+          owl:sameAs :Headless_Men .
+
+
+###  http://www.gryphontology.org/British_Isles
+:British_Isles rdf:type owl:NamedIndividual ,
+                        :Region .
+
+
+###  http://www.gryphontology.org/Brownie
+:Brownie rdf:type owl:NamedIndividual ,
+                  :Mythological_Creature ;
+         :has_rhythm_cycle :Nocturnal ;
+         :has_traits_of_animal :Human ;
+         :wikidata_identifier "Q1783949"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Canine
+:Canine rdf:type owl:NamedIndividual ,
+                 :Real_Creature .
+
+
+###  http://www.gryphontology.org/Carnivore
+:Carnivore rdf:type owl:NamedIndividual ,
+                    :Feeding_Habit .
+
+
+###  http://www.gryphontology.org/Centaur
+:Centaur rdf:type owl:NamedIndividual ,
+                  :Mythological_Creature ;
+         :has_traits_of_animal :Horse ,
+                               :Human ;
+         :wikidata_identifier "Q83203"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Cerastes
+:Cerastes rdf:type owl:NamedIndividual ,
+                   :Mythological_Creature ;
+          :has_traits_of_animal :Snake ;
+          :wikidata_identifier "Q5063702"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Cerberus
+:Cerberus rdf:type owl:NamedIndividual ,
+                   :Mythological_Creature ;
+          :has_traits_of_animal :Canine ,
+                                :Snake ;
+          :number_of_heads 3 ;
+          :wikidata_identifier "Q83496"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Cetea
+:Cetea rdf:type owl:NamedIndividual ,
+                :Mythological_Creature ;
+       :belongs_to_habitat :Aquatic ;
+       :has_traits_of_animal :Fish ;
+       :is_described_by_civilization :Ancient_Greece ;
+       :wikidata_identifier "Q3269950"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Cherubim
+:Cherubim rdf:type owl:NamedIndividual ,
+                   :Mythological_Creature ;
+          :has_mythic_archetype :Angelic ;
+          :has_traits_of_animal :Human ;
+          :is_part_of_religious_mythology :Judaism ;
+          :historical_description "In representing the cherubim by infants' winged heads, the early painters meant them to be emblematic of a pure spirit glowing with love and intelligence, the head the seat of the soul, and the wings attribute of swiftness and spirit alone retained. (Vinycomb 1906)"@en ;
+          :wikidata_identifier "Q185569"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Chimera
+:Chimera rdf:type owl:NamedIndividual ,
+                  :Mythological_Creature ;
+         :has_traits_of_animal :Feline ,
+                               :Goat ,
+                               :Snake ;
+         :number_of_heads 2 ,
+                          3 ;
+         :wikidata_identifier "Q182790"^^xsd:string ;
+         rdfs:comment "An imaginary fire-breathing monster of great swiftness and strength, invented by the ancient Greek poets. (Vinycomb 1906)"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Christianity
+:Christianity rdf:type owl:NamedIndividual ,
+                       :Religion .
+
+
+###  http://www.gryphontology.org/Cockatrice
+:Cockatrice rdf:type owl:NamedIndividual ,
+                     :Mythological_Creature ;
+            :has_moral_polarity :Evil ;
+            :has_traits_of_animal :Bird ,
+                                  :Snake ;
+            :wikidata_identifier "Q1371084"^^xsd:string ;
+            rdfs:comment "This chimerical creature was said to be produced from a cock's egg hatched by a serpent; hence its name. It differs from the Wyvern of heraldry only in having a head like that of a dunghill cock. (Vinycomb 1906)"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Corporeal
+:Corporeal rdf:type owl:NamedIndividual ,
+                    :Corporeality .
+
+
+###  http://www.gryphontology.org/Cow
+:Cow rdf:type owl:NamedIndividual ,
+              :Real_Creature .
+
+
+###  http://www.gryphontology.org/Crepuscular
+:Crepuscular rdf:type owl:NamedIndividual ,
+                      :Rhythm_Cycle .
+
+
+###  http://www.gryphontology.org/Cyclopes
+:Cyclopes rdf:type owl:NamedIndividual ,
+                   :Mythological_Creature ;
+          :has_traits_of_animal :Human ;
+          :is_size :Giant ;
+          :wikidata_identifier "Q128430"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Deer
+:Deer rdf:type owl:NamedIndividual ,
+               :Real_Creature .
+
+
+###  http://www.gryphontology.org/Diminutive
+:Diminutive rdf:type owl:NamedIndividual ,
+                     :Size .
+
+
+###  http://www.gryphontology.org/Diurnal
+:Diurnal rdf:type owl:NamedIndividual ,
+                  :Rhythm_Cycle .
+
+
+###  http://www.gryphontology.org/Dracaenae
+:Dracaenae rdf:type owl:NamedIndividual ;
+           owl:sameAs :Drakaina .
+
+
+###  http://www.gryphontology.org/Draconic
+:Draconic rdf:type owl:NamedIndividual ,
+                   :Archetype .
+
+
+###  http://www.gryphontology.org/Dragon
+:Dragon rdf:type owl:NamedIndividual ,
+                 :Mythological_Creature ;
+        :has_mythic_archetype :Draconic ;
+        :has_traits_of_animal :Snake ;
+        :is_able_to_fly :Aerial ;
+        :is_described_in_region :Europe ;
+        :wikidata_identifier "Q7559"^^xsd:string ;
+        rdfs:comment "The dragon is the most interesting and most frequently seen of all chimerical figures, and it is a remarkable fact that such a creature appears at an early period of the world's history to have been known in the East and in countries widely separated. Long anterior to the dawn of civilisation in the West of Europe, even in far-off China and Japan in the extreme East of Asia we find the dragon delineated in very much the same form in which it appears in our national heraldry. The ancients conceived it as the embodiment of malignant and destructive power, and with attributes of the most terrible kind. (Vinycomb 1906)"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Drakaina
+:Drakaina rdf:type owl:NamedIndividual ,
+                   :Mythological_Creature ;
+          :has_traits_of_animal :Snake ;
+          :is_described_by_civilization :Ancient_Greece ;
+          :is_uniformly_gendered :Woman ;
+          :wikidata_identifier "Q2330255"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Dryad
+:Dryad rdf:type owl:NamedIndividual ,
+                :Mythological_Creature ;
+       :has_traits_of_animal :Human ;
+       :wikidata_identifier "Q202474"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Dwarf
+:Dwarf rdf:type owl:NamedIndividual ,
+                :Mythological_Creature ;
+       :belongs_to_habitat :Subterranean ,
+                           :Terrestrial ;
+       :has_traits_of_animal :Human ;
+       :is_size :Diminutive ;
+       :wikidata_identifier "Q214045"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Egypt
+:Egypt rdf:type owl:NamedIndividual ,
+                :Country ;
+       :found_in_country :Egypt .
+
+
+###  http://www.gryphontology.org/Elf
+:Elf rdf:type owl:NamedIndividual ,
+              :Mythological_Creature ;
+     :has_traits_of_animal :Human ;
+     :is_size :Diminutive ;
+     :wikidata_identifier "Q174396"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Empusa
+:Empusa rdf:type owl:NamedIndividual ,
+                 :Mythological_Creature ;
+        :exhibits_behavior :Seduction ,
+                           :Shape-shifting ;
+        :has_traits_of_animal :Human ;
+        :is_described_by_civilization :Ancient_Greece ;
+        :is_uniformly_gendered :Woman ;
+        :wikidata_identifier "Q903786"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Enfield
+:Enfield rdf:type owl:NamedIndividual ,
+                  :Mythological_Creature ;
+         :has_traits_of_animal :Bird ,
+                               :Canine ,
+                               :Feline ;
+         :wikidata_identifier "Q989686"^^xsd:string ;
+         rdfs:comment "An imaginary hybrid animal with the head of a fox, chest of a greyhound, talons of an eagle, and body of a lion; the hind legs and tail of a wolf. (Vinycomb 1906)"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Epimacus
+:Epimacus rdf:type owl:NamedIndividual ;
+          owl:sameAs :Opinicus .
+
+
+###  http://www.gryphontology.org/Europe
+:Europe rdf:type owl:NamedIndividual ,
+                 :Region .
+
+
+###  http://www.gryphontology.org/Evil
+:Evil rdf:type owl:NamedIndividual ,
+               :Moral_Polarity .
+
+
+###  http://www.gryphontology.org/Extant
+:Extant rdf:type owl:NamedIndividual ,
+                 :Mortality .
+
+
+###  http://www.gryphontology.org/Extinct
+:Extinct rdf:type owl:NamedIndividual ,
+                  :Mortality .
+
+
+###  http://www.gryphontology.org/Fairy
+:Fairy rdf:type owl:NamedIndividual ,
+                :Mythological_Creature ;
+       :has_mythic_archetype :Fairy-like ;
+       :has_traits_of_animal :Human ;
+       :is_magical :Magical ;
+       :is_size :Diminutive ;
+       :wikidata_identifier "Q8028"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Fairy-like
+:Fairy-like rdf:type owl:NamedIndividual ,
+                     :Archetype .
+
+
+###  http://www.gryphontology.org/Faun
+:Faun rdf:type owl:NamedIndividual ;
+      owl:sameAs :Satyr .
+
+
+###  http://www.gryphontology.org/Feline
+:Feline rdf:type owl:NamedIndividual ,
+                 :Real_Creature .
+
+
+###  http://www.gryphontology.org/Female
+:Female rdf:type owl:NamedIndividual ,
+                 :Sex .
+
+
+###  http://www.gryphontology.org/Fire-breathing
+:Fire-breathing rdf:type owl:NamedIndividual ,
+                         :Behavior .
+
+
+###  http://www.gryphontology.org/Fish
+:Fish rdf:type owl:NamedIndividual ,
+               :Real_Creature .
+
+
+###  http://www.gryphontology.org/Fur
+:Fur rdf:type owl:NamedIndividual ,
+              :Anatomical_Feature .
+
+
+###  http://www.gryphontology.org/Gender-variant
+:Gender-variant rdf:type owl:NamedIndividual ,
+                         :Gender ;
+                rdfs:label "Gender-variant"@en .
+
+
+###  http://www.gryphontology.org/Genie
+:Genie rdf:type owl:NamedIndividual ;
+       owl:sameAs :Jinn .
+
+
+###  http://www.gryphontology.org/Germany
+:Germany rdf:type owl:NamedIndividual ,
+                  :Country .
+
+
+###  http://www.gryphontology.org/Ghost
+:Ghost rdf:type owl:NamedIndividual ,
+                :Mythological_Creature ;
+       owl:sameAs :Spirit ;
+       :has_degree_of_corporeality :Non-corporeal ;
+       :has_mortality :Undead ;
+       :wikidata_identifier "Q45529"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Giant
+:Giant rdf:type owl:NamedIndividual ,
+                :Size .
+
+
+###  http://www.gryphontology.org/Gnome
+:Gnome rdf:type owl:NamedIndividual ,
+                :Mythological_Creature ;
+       :has_traits_of_animal :Human ;
+       :is_size :Diminutive ;
+       :wikidata_identifier "Q188215"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Goat
+:Goat rdf:type owl:NamedIndividual ,
+               :Real_Creature .
+
+
+###  http://www.gryphontology.org/Goblin
+:Goblin rdf:type owl:NamedIndividual ,
+                 :Mythological_Creature ;
+        :has_traits_of_animal :Human ;
+        :is_size :Diminutive ;
+        :wikidata_identifier "Q308697"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Golem
+:Golem rdf:type owl:NamedIndividual ,
+                :Mythological_Creature ;
+       :has_traits_of_animal :Human ;
+       :wikidata_identifier "Q215085"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Good
+:Good rdf:type owl:NamedIndividual ,
+               :Moral_Polarity .
+
+
+###  http://www.gryphontology.org/Gorgon
+:Gorgon rdf:type owl:NamedIndividual ,
+                 :Mythological_Creature ;
+        :has_traits_of_animal :Human ,
+                              :Snake ;
+        :is_uniformly_gendered :Woman ;
+        :wikidata_identifier "Q102059"^^xsd:string ;
+        rdfs:comment "In classic story there were three gorgons, with serpents on their heads instead of hair. Medusa was the chief of the three, and the only one that was mortal. So hideous was her face that whoever set eyes on it was instantly turned to stone. (Vinycomb 1906)"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Greece
+:Greece rdf:type owl:NamedIndividual ,
+                 :Country .
+
+
+###  http://www.gryphontology.org/Griffin
+:Griffin rdf:type owl:NamedIndividual ,
+                  :Mythological_Creature ;
+         owl:sameAs :Griffon ,
+                    :Gryphon ,
+                    :Opinicus ;
+         :has_degree_of_corporeality :Corporeal ;
+         :has_mortality :Extant ;
+         :has_traits_of_animal :Bird ,
+                               :Feline ;
+         :is_able_to_fly :Aerial ;
+         :wikidata_identifier "Q130223"^^xsd:string ;
+         rdfs:comment "A fabulous, bird-like species of animals, dwelling in the Rhipaean mountains, between the Hyperboreans and the one-eyed Arimaspians, and guarding the gold of the north. The Arismaspians mounted on horseback, and attempted to steal the gold, and hence arose the hostility between the horse and the griffin. The body of the griffin was that of a lion, while the head and wings were those of an eagle. (Smith 1873)"^^xsd:string ,
+                      "The griffin, \"sacred to the sun,\" combines the bodily attributes of the \" cloud-cleaving eagle \" and the \"king of beasts,\" that is, it has the head, neck, wings, and talons of an eagle, conjoined to the hinder parts of a lion. It is usually represented with projecting ears, indicating an acute sense of hearing, in addition to its other supposed extraordinary qualities. (Vinycomb 1906)"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Griffon
+:Griffon rdf:type owl:NamedIndividual .
+
+
+###  http://www.gryphontology.org/Gryphon
+:Gryphon rdf:type owl:NamedIndividual .
+
+
+###  http://www.gryphontology.org/Guardian_Angel
+:Guardian_Angel rdf:type owl:NamedIndividual ,
+                         :Mythological_Creature ;
+                :has_mythic_archetype :Angelic ;
+                :has_traits_of_animal :Human ;
+                :is_part_of_religious_mythology :Judaism ;
+                :wikidata_identifier "Q728388"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Harpy
+:Harpy rdf:type owl:NamedIndividual ,
+                :Mythological_Creature ;
+       :has_traits_of_animal :Bird ,
+                             :Human ;
+       :is_uniformly_gendered :Woman ;
+       :wikidata_identifier "Q181360"^^xsd:string ;
+       rdfs:comment "A poetical monstrosity of classical origin, described as \"winged creatures having the head and breasts of a woman, and the body and limbs of a vulture; very fierce and loathsome, living in an atmosphere of filth and stench, and contaminating anything which they come near. Pale and emaciated, they were continually tormented with insatiable hunger.\" They are best known from the story of the Argonauts, where they appear as the tormentors of the blind king Phineus, whose table they robbed of its viands, which they either devoured or spoiled. They were regarded by the ancients as ministers of sudden death. (Vinycomb 1906)"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Headless_Men
+:Headless_Men rdf:type owl:NamedIndividual ,
+                       :Mythological_Creature ;
+              :belongs_to_habitat :Terrestrial ;
+              :has_degree_of_corporeality :Corporeal ;
+              :has_degree_of_sentience :Sentient ;
+              :has_mortality :Extant ;
+              :has_traits_of_animal :Human ;
+              :is_able_to_fly :Non-aerial ;
+              :is_described_by_civilization :Ancient_Greece ;
+              :wikidata_identifier "Q4925982"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Herbivore
+:Herbivore rdf:type owl:NamedIndividual ,
+                    :Feeding_Habit .
+
+
+###  http://www.gryphontology.org/Horse
+:Horse rdf:type owl:NamedIndividual ,
+                :Real_Creature .
+
+
+###  http://www.gryphontology.org/Human
+:Human rdf:type owl:NamedIndividual ,
+                :Real_Creature .
+
+
+###  http://www.gryphontology.org/Hydra
+:Hydra rdf:type owl:NamedIndividual ,
+                :Mythological_Creature ;
+       :belongs_to_habitat :Aquatic ;
+       :has_traits_of_animal :Snake ;
+       :is_described_by_civilization :Ancient_Greece ,
+                                     :Ancient_Rome ;
+       :number_of_heads 7 ,
+                        9 ;
+       :wikidata_identifier "Q170379"^^xsd:string ;
+       rdfs:comment "The number of its heads varies with the poets, though ancient gems usually represent it with seven or nine. (Vinycomb 1906)"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Imp
+:Imp rdf:type owl:NamedIndividual ,
+              :Mythological_Creature ;
+     :found_in_country :Germany ;
+     :has_traits_of_animal :Human ;
+     :is_size :Diminutive ;
+     :wikidata_identifier "Q2266278"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Intersex
+:Intersex rdf:type owl:NamedIndividual ,
+                   :Sex .
+
+
+###  http://www.gryphontology.org/Islam
+:Islam rdf:type owl:NamedIndividual ,
+                :Religion .
+
+
+###  http://www.gryphontology.org/Italy
+:Italy rdf:type owl:NamedIndividual ,
+                :Country .
+
+
+###  http://www.gryphontology.org/Jinn
+:Jinn rdf:type owl:NamedIndividual ,
+               :Mythological_Creature ;
+      :has_moral_polarity :Neutral ;
+      :has_traits_of_animal :Human ;
+      :is_magical :Magical ;
+      :is_part_of_religious_mythology :Islam ;
+      :wikidata_identifier "Q3465"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Judaism
+:Judaism rdf:type owl:NamedIndividual ,
+                  :Religion .
+
+
+###  http://www.gryphontology.org/Kobold
+:Kobold rdf:type owl:NamedIndividual ,
+                 :Mythological_Creature ;
+        :has_traits_of_animal :Human ;
+        :is_size :Diminutive ;
+        :wikidata_identifier "Q1064669"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Lamia
+:Lamia rdf:type owl:NamedIndividual ,
+                :Mythological_Creature ;
+       :has_moral_polarity :Evil ;
+       :has_rhythm_cycle :Nocturnal ;
+       :has_traits_of_animal :Human ,
+                             :Snake ;
+       :is_described_by_civilization :Ancient_Greece ;
+       :is_uniformly_gendered :Woman ;
+       :wikidata_identifier "Q200073"^^xsd:string ;
+       rdfs:comment "It is said to be \"the swiftest of all four-footed creatures, that it is very treacherous and cruel to men. It is stated to be bred in Lybia, and sometimes devours its own young.\" It is represented in an ancient \"Bestiaria\" as having the head and breasts of a woman, and the body of a four-footed animal with flowing tail, the hind feet having divided hoofs. (Vinycomb 1906)"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Leviathan
+:Leviathan rdf:type owl:NamedIndividual ;
+           owl:sameAs :Rahab ;
+           :belongs_to_habitat :Aquatic ;
+           :exhibits_behavior :Fire-breathing ;
+           :has_moral_polarity :Evil ;
+           :has_mythic_archetype :Draconic ;
+           :has_traits_of_animal :Snake ;
+           :is_part_of_religious_mythology :Judaism ;
+           :is_size :Giant .
+
+
+###  http://www.gryphontology.org/Loch_Ness_Monster
+:Loch_Ness_Monster rdf:type owl:NamedIndividual ,
+                            :Mythological_Creature ;
+                   owl:sameAs :Nessie ;
+                   :belongs_to_habitat :Aquatic ;
+                   :has_degree_of_corporeality :Corporeal ;
+                   :is_able_to_fly :Non-aerial ;
+                   :wikidata_identifier "Q49658"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Lycanthrope
+:Lycanthrope rdf:type owl:NamedIndividual ;
+             owl:sameAs :Werewolf .
+
+
+###  http://www.gryphontology.org/Magical
+:Magical rdf:type owl:NamedIndividual ,
+                  :Magicalilty .
+
+
+###  http://www.gryphontology.org/Male
+:Male rdf:type owl:NamedIndividual ,
+               :Sex .
+
+
+###  http://www.gryphontology.org/Man
+:Man rdf:type owl:NamedIndividual ,
+              :Gender ;
+     rdfs:label "Man/Masculine"@en .
+
+
+###  http://www.gryphontology.org/Manticore
+:Manticore rdf:type owl:NamedIndividual ,
+                    :Mythological_Creature ;
+           :has_traits_of_animal :Feline ,
+                                 :Human ;
+           :wikidata_identifier "Q223795"^^xsd:string ;
+           rdfs:comment "A chimerical creature of mediaeval invention, having the body of an heraldic tiger with mane, and the head of an old man with long spiral horns. Some heraldic authorities make the horns more like those of an ox, and the feet like a dragon's. (Vinycomb 1906)"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Mediterranean
+:Mediterranean rdf:type owl:NamedIndividual ,
+                        :Region .
+
+
+###  http://www.gryphontology.org/Mermaid
+:Mermaid rdf:type owl:NamedIndividual ,
+                  :Mythological_Creature ;
+         :belongs_to_habitat :Aquatic ;
+         :has_traits_of_animal :Fish ,
+                               :Human ;
+         :is_uniformly_gendered :Woman ;
+         :wikidata_identifier "Q182559"^^xsd:string ;
+         rdfs:comment "This fabulous creature of the sea, well known in ancient and modern times as the frequent theme of poets and the subject of numberless legends, has from a very early date been a favourite device. She is usually represented in heraldry as having the upper part the head and body of a beautiful young woman, holding a comb and glass in her hands, the lower part ending in a fish. (Vinycomb 1906)"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Merman
+:Merman rdf:type owl:NamedIndividual ,
+                 :Mythological_Creature ;
+        owl:sameAs :Triton ;
+        :belongs_to_habitat :Aquatic ;
+        :has_traits_of_animal :Fish ,
+                              :Human ;
+        :is_uniformly_gendered :Man ;
+        :wikidata_identifier "Q4995044"^^xsd:string ;
+        rdfs:comment "Triton was the only son of Neptune and Amphitrite. The poet Apollonius Rhodius describes him as having the upper parts of the body of a man, while the lower parts were those of a dolphin. Later poets and artists revelled in the conception of a whole race of similar tritons, who were regarded as a wanton, mischievous tribe, like the satyrs on land. (Vinycomb 1906)"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Middle_East
+:Middle_East rdf:type owl:NamedIndividual ,
+                      :Region .
+
+
+###  http://www.gryphontology.org/Mummy
+:Mummy rdf:type owl:NamedIndividual ,
+                :Mythological_Creature ;
+       :belongs_to_habitat :Subterranean ;
+       :found_in_country :Egypt ;
+       :has_mortality :Undead ;
+       :has_traits_of_animal :Human ;
+       :wikidata_identifier "Q43616"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Nephilim
+:Nephilim rdf:type owl:NamedIndividual ,
+                   :Mythological_Creature ;
+          :has_traits_of_animal :Human ;
+          :is_size :Giant ;
+          :wikidata_identifier "Q747737" .
+
+
+###  http://www.gryphontology.org/Nessie
+:Nessie rdf:type owl:NamedIndividual .
+
+
+###  http://www.gryphontology.org/Neutral
+:Neutral rdf:type owl:NamedIndividual ,
+                  :Moral_Polarity .
+
+
+###  http://www.gryphontology.org/Nocturnal
+:Nocturnal rdf:type owl:NamedIndividual ,
+                    :Rhythm_Cycle .
+
+
+###  http://www.gryphontology.org/Non-aerial
+:Non-aerial rdf:type owl:NamedIndividual ,
+                     :Flight_Capability .
+
+
+###  http://www.gryphontology.org/Non-corporeal
+:Non-corporeal rdf:type owl:NamedIndividual ,
+                        :Corporeality .
+
+
+###  http://www.gryphontology.org/Non-magical
+:Non-magical rdf:type owl:NamedIndividual ,
+                      :Magicalilty .
+
+
+###  http://www.gryphontology.org/Non-sentient
+:Non-sentient rdf:type owl:NamedIndividual ,
+                       :Sentience .
+
+
+###  http://www.gryphontology.org/Nymph
+:Nymph rdf:type owl:NamedIndividual ,
+                :Mythological_Creature ;
+       :has_degree_of_sentience :Sentient ;
+       :has_traits_of_animal :Human ;
+       :is_uniformly_gendered :Woman ;
+       :wikidata_identifier "Q373916"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Omnivore
+:Omnivore rdf:type owl:NamedIndividual ,
+                   :Feeding_Habit .
+
+
+###  http://www.gryphontology.org/Opinicus
+:Opinicus rdf:type owl:NamedIndividual ,
+                   :Mythological_Creature ;
+          rdfs:comment "This creature appears to be a variety of the griffin family. Authorities blazon it as having its body and four legs like those of a lion; the head and neck and wings like an eagle, and the short tail of a camel, sometimes borne sans wings. (Vinycomb 1906)"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Panotti
+:Panotti rdf:type owl:NamedIndividual ,
+                  :Mythological_Creature ;
+         :has_traits_of_animal :Human ;
+         :is_described_by_civilization :Ancient_Greece ;
+         :wikidata_identifier "Q2049776"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Pegasian
+:Pegasian rdf:type owl:NamedIndividual ,
+                   :Archetype .
+
+
+###  http://www.gryphontology.org/Pegasus
+:Pegasus rdf:type owl:NamedIndividual ,
+                  :Mythological_Creature ;
+         :has_mythic_archetype :Pegasian ;
+         :has_traits_of_animal :Bird ,
+                               :Horse ;
+         :is_able_to_fly :Aerial ;
+         rdfs:comment "A poetic creation of the ancients, a winged horse captured by Bellerophon, the great hero of Corinthian legend. (Vinycomb 1906)"^^xsd:string ,
+                      "In consequence of some false charges brought against him, Bellerophon was sent to combat with a monster called the Chimæra, in the expectation that he would perish in the attempt; but Minerva, pitying his situation, provided him with a winged horse, named Pegasus, by means of which he accomplished his perilous task in safety. (Pliny/Bostock 1855)"^^xsd:string ,
+                      "Æthiopia produces the lynx in abundance, and the sphinx, which has brown hair and two mammæ on the breast, as well as many monstrous kinds of a similar nature; horses with wings, and armed with horns, which are called pegasi...\" (Pliny/Bostock 1855)"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Petrifying
+:Petrifying rdf:type owl:NamedIndividual ,
+                     :Behavior ;
+            :wikidata_identifier "Q7178803"@en .
+
+
+###  http://www.gryphontology.org/Phoenix
+:Phoenix rdf:type owl:NamedIndividual ,
+                  :Mythological_Creature ;
+         :has_degree_of_corporeality :Corporeal ;
+         :has_moral_polarity :Good ;
+         :has_traits_of_animal :Bird ;
+         :is_able_to_fly :Aerial ;
+         rdfs:comment "An imaginary bird, described by ancient writers as in form like an eagle, but more beautiful in its plumage. Among the ancient classical writers it was an emblem of those existing in paradise, enjoying eternal youth and never-ending pleasure. (Vinycomb 1906)"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Pixie
+:Pixie rdf:type owl:NamedIndividual ,
+                :Mythological_Creature ;
+       :has_mythic_archetype :Fairy-like ;
+       :has_traits_of_animal :Human ;
+       :is_described_in_region :British_Isles ;
+       :is_magical :Magical ;
+       :is_size :Diminutive .
+
+
+###  http://www.gryphontology.org/Praying_Angel
+:Praying_Angel rdf:type owl:NamedIndividual ,
+                        :Mythological_Creature ;
+               :has_mythic_archetype :Angelic ;
+               :has_traits_of_animal :Human ;
+               :is_part_of_religious_mythology :Judaism .
+
+
+###  http://www.gryphontology.org/Rahab
+:Rahab rdf:type owl:NamedIndividual .
+
+
+###  http://www.gryphontology.org/Recording_Angel
+:Recording_Angel rdf:type owl:NamedIndividual ,
+                          :Mythological_Creature ;
+                 :has_mythic_archetype :Angelic ;
+                 :has_traits_of_animal :Human ;
+                 :is_part_of_religious_mythology :Judaism ;
+                 :wikidata_identifier "Q11631135"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Regular-size
+:Regular-size rdf:type owl:NamedIndividual ,
+                       :Size .
+
+
+###  http://www.gryphontology.org/Sasquatch
+:Sasquatch rdf:type owl:NamedIndividual .
+
+
+###  http://www.gryphontology.org/Satyr
+:Satyr rdf:type owl:NamedIndividual ,
+                :Mythological_Creature ;
+       :has_traits_of_animal :Horse ,
+                             :Human ;
+       :is_uniformly_gendered :Man ;
+       :wikidata_identifier "Q163709"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Satyress
+:Satyress rdf:type owl:NamedIndividual ,
+                   :Mythological_Creature ;
+          :has_traits_of_animal :Horse ,
+                                :Human ;
+          :is_uniformly_gendered :Woman ;
+          :wikidata_identifier "Q7426959"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Scales
+:Scales rdf:type owl:NamedIndividual ,
+                 :Anatomical_Feature .
+
+
+###  http://www.gryphontology.org/Scandinavia
+:Scandinavia rdf:type owl:NamedIndividual ,
+                      :Region .
+
+
+###  http://www.gryphontology.org/Sea_Goat
+:Sea_Goat rdf:type owl:NamedIndividual ,
+                   :Mythological_Creature ;
+          :belongs_to_habitat :Aquatic ;
+          :has_traits_of_animal :Fish ,
+                                :Goat ;
+          :wikidata_identifier "Q3503382"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Seduction
+:Seduction rdf:type owl:NamedIndividual ,
+                    :Behavior .
+
+
+###  http://www.gryphontology.org/Semi-aquatic
+:Semi-aquatic rdf:type owl:NamedIndividual ,
+                       :Habitat .
+
+
+###  http://www.gryphontology.org/Sentient
+:Sentient rdf:type owl:NamedIndividual ,
+                   :Sentience .
+
+
+###  http://www.gryphontology.org/Seraph
+:Seraph rdf:type owl:NamedIndividual ,
+                 :Mythological_Creature ;
+        :has_mythic_archetype :Angelic ;
+        :has_traits_of_animal :Human ;
+        :is_part_of_religious_mythology :Judaism ;
+        :wikidata_identifier "Q194077"^^xsd:string ;
+        rdfs:comment "The seraphim are regarded as an order of angels distinguished for fervent zeal and religious ardour. The word means \" burning,\" i.e., with Divine Love. (Vinycomb 1906)"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Shade
+:Shade rdf:type owl:NamedIndividual ,
+                :Mythological_Creature ;
+       :belongs_to_habitat :Subterranean ;
+       :has_degree_of_corporeality :Non-corporeal ;
+       :has_mortality :Undead ;
+       :has_traits_of_animal :Human ;
+       :wikidata_identifier "Q7460262"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Shape-shifting
+:Shape-shifting rdf:type owl:NamedIndividual ,
+                         :Behavior .
+
+
+###  http://www.gryphontology.org/Siren
+:Siren rdf:type owl:NamedIndividual ,
+                :Mythological_Creature ;
+       :belongs_to_habitat :Aquatic ;
+       :exhibits_behavior :Seduction ;
+       :has_traits_of_animal :Fish ,
+                             :Human ;
+       :is_uniformly_gendered :Woman ;
+       :wikidata_identifier "Q150986"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Snake
+:Snake rdf:type owl:NamedIndividual ,
+                :Real_Creature .
+
+
+###  http://www.gryphontology.org/Sphingium
+:Sphingium rdf:type owl:NamedIndividual ;
+           owl:sameAs :Sphinx .
+
+
+###  http://www.gryphontology.org/Sphinx
+:Sphinx rdf:type owl:NamedIndividual ,
+                 :Mythological_Creature ;
+        :found_in_country :Egypt ;
+        :has_traits_of_animal :Bird ,
+                              :Feline ,
+                              :Human ;
+        :is_able_to_fly :Aerial ;
+        :is_described_by_civilization :Ancient_Greece ;
+        :is_uniformly_gendered :Woman ;
+        :wikidata_identifier "Q151480"^^xsd:string ;
+        rdfs:comment "Hera sent the Sphinx, whose mother was Echidna and her father Typhon; and she had the face of a woman, the breast and feet and tail of a lion, and the wings of a bird. (Apollodorus/Frazer 1921)"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Spirit
+:Spirit rdf:type owl:NamedIndividual .
+
+
+###  http://www.gryphontology.org/Sprite
+:Sprite rdf:type owl:NamedIndividual ,
+                 :Mythological_Creature ;
+        :has_degree_of_corporeality :Corporeal ;
+        :has_traits_of_animal :Human ;
+        :is_magical :Magical ;
+        :is_size :Diminutive ;
+        :wikidata_identifier "Q20828805"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Subterranean
+:Subterranean rdf:type owl:NamedIndividual ,
+                       :Habitat .
+
+
+###  http://www.gryphontology.org/Terrestrial
+:Terrestrial rdf:type owl:NamedIndividual ,
+                      :Habitat .
+
+
+###  http://www.gryphontology.org/Triton
+:Triton rdf:type owl:NamedIndividual .
+
+
+###  http://www.gryphontology.org/Troll
+:Troll rdf:type owl:NamedIndividual ,
+                :Mythological_Creature ;
+       :belongs_to_habitat :Subterranean ,
+                           :Terrestrial ;
+       :has_traits_of_animal :Human ;
+       :is_able_to_fly :Non-aerial ;
+       :is_described_in_region :Scandinavia ;
+       :is_size :Giant ;
+       :wikidata_identifier "Q12581"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Undead
+:Undead rdf:type owl:NamedIndividual ,
+                 :Mortality .
+
+
+###  http://www.gryphontology.org/Unicorn
+:Unicorn rdf:type owl:NamedIndividual ,
+                  :Mythological_Creature ;
+         :has_moral_polarity :Good ;
+         :has_mythic_archetype :Pegasian ;
+         :has_traits_of_animal :Deer ,
+                               :Feline ,
+                               :Horse ;
+         :number_of_horns 1 ;
+         :wikidata_identifier "Q7246"^^xsd:string ;
+         rdfs:comment "The Unicorn is a Creature about the bigness of a Horse, he hath the beard of a Goat, the head of a Hart, he hath a neck with a large main, he hath the feet of an Elephant, the tayl of a Hog, he hath one black horn in the middle of his forehead about two cubits long. (Franzius 1670)"@en ,
+                      "The pegasus and the rhinoceros together may have given rise to that fabulous animal, the unicorn. (Pliny/Bostock 1855)"@en ,
+                      "The unicorn is represented by heraldic usage as having the head and body of a horse, with the tail of a lion, and the limbs and hoofs of a stag; a twisted horn grows out from the centre of its forehead. (...) The unicorn was a famous device all over Europe, and symbolised the virtue of the mind and the strength of the body. (Vinycomb 1906)"@en ;
+         rdfs:label "Unicorn"@en .
+
+
+###  http://www.gryphontology.org/Vampire
+:Vampire rdf:type owl:NamedIndividual ,
+                  :Mythological_Creature ;
+         :exhibits_behavior :Seduction ;
+         :has_degree_of_corporeality :Corporeal ;
+         :has_degree_of_sentience :Sentient ;
+         :has_feeding_habit :Vampiric ;
+         :has_moral_polarity :Evil ;
+         :has_mortality :Undead ;
+         :has_rhythm_cycle :Nocturnal ;
+         :has_traits_of_animal :Feline ;
+         :wikidata_identifier "Q46721"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Vampiric
+:Vampiric rdf:type owl:NamedIndividual ,
+                   :Feeding_Habit .
+
+
+###  http://www.gryphontology.org/Werewolf
+:Werewolf rdf:type owl:NamedIndividual ,
+                   :Mythological_Creature ;
+          :has_degree_of_corporeality :Corporeal ;
+          :has_feeding_habit :Carnivore ;
+          :has_moral_polarity :Evil ;
+          :has_mortality :Extant ;
+          :has_rhythm_cycle :Nocturnal ;
+          :has_traits_of_animal :Canine ,
+                                :Human ;
+          :is_able_to_fly :Non-aerial ;
+          :wikidata_identifier "Q9410"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Woman
+:Woman rdf:type owl:NamedIndividual ,
+                :Gender ;
+       rdfs:label "Woman/Feminine"@en .
+
+
+###  http://www.gryphontology.org/Wyvern
+:Wyvern rdf:type owl:NamedIndividual ,
+                 :Mythological_Creature ;
+        :has_mortality :Extant ;
+        :has_mythic_archetype :Draconic ;
+        :has_traits_of_animal :Bird ,
+                              :Snake ;
+        :is_able_to_fly :Aerial ;
+        :wikidata_identifier "Q862809"^^xsd:string ;
+        rdfs:comment "Said to represent a flying serpent, an imaginary creature resembling the dragon, but having only two legs, which are like an eagle's, and a serpent-like tail, barbed, sometimes represented nowed after the manner of serpents. (Vinycomb 1906)"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Zombie
+:Zombie rdf:type owl:NamedIndividual ,
+                 :Mythological_Creature ;
+        :belongs_to_habitat :Terrestrial ;
+        :has_degree_of_corporeality :Corporeal ;
+        :has_degree_of_sentience :Non-sentient ;
+        :has_mortality :Undead ;
+        :has_rhythm_cycle :Nocturnal ;
+        :has_traits_of_animal :Human ;
+        :is_able_to_fly :Non-aerial ;
+        :wikidata_identifier "Q9406"^^xsd:string .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
