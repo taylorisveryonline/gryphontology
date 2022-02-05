@@ -13,7 +13,7 @@
                                  dc:description "An open-source formal ontology of legendary creatures from around the world."@en ;
                                  dc:title "GryphOntology"@en ;
                                  rdfs:seeAlso "https://github.com/taylorisveryonline/gryphontology"@en ;
-                                 owl:versionInfo "2022-02-03"@en .
+                                 owl:versionInfo "2022-02-05"@en .
 
 #################################################################
 #    Annotation properties
@@ -153,7 +153,8 @@ owl:equivalentClass rdf:type owl:AnnotationProperty .
 
 ###  http://www.gryphontology.org/is_part_of_religious_mythology
 :is_part_of_religious_mythology rdf:type owl:ObjectProperty ;
-                                rdfs:domain :Mythological_Creature ;
+                                rdfs:domain :Motif ,
+                                            :Mythological_Creature ;
                                 rdfs:range :Religion .
 
 
@@ -280,6 +281,10 @@ owl:equivalentClass rdf:type owl:AnnotationProperty .
 
 ###  http://www.gryphontology.org/Mortality
 :Mortality rdf:type owl:Class .
+
+
+###  http://www.gryphontology.org/Motif
+:Motif rdf:type owl:Class .
 
 
 ###  http://www.gryphontology.org/Mythological_Creature
@@ -483,6 +488,12 @@ owl:equivalentClass rdf:type owl:AnnotationProperty .
          :wikidata_identifier "Q1783949"^^xsd:string .
 
 
+###  http://www.gryphontology.org/Canaanite_religion
+:Canaanite_religion rdf:type owl:NamedIndividual ,
+                             :Religion ;
+                    rdfs:label "Canaanite religion"@en .
+
+
 ###  http://www.gryphontology.org/Canine
 :Canine rdf:type owl:NamedIndividual ,
                  :Real_Creature .
@@ -524,6 +535,14 @@ owl:equivalentClass rdf:type owl:AnnotationProperty .
        :has_traits_of_animal :Fish ;
        :is_described_by_civilization :Ancient_Greece ;
        :wikidata_identifier "Q3269950"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Chaoskampf
+:Chaoskampf rdf:type owl:NamedIndividual ,
+                     :Motif ;
+            :is_part_of_religious_mythology :Proto-Indo-European_religion ;
+            rdfs:label "Chaoskampf"@de ,
+                       "Serpent-slaying myth"@en .
 
 
 ###  http://www.gryphontology.org/Cherubim
@@ -1189,6 +1208,12 @@ owl:equivalentClass rdf:type owl:AnnotationProperty .
                :has_mythic_archetype :Angelic ;
                :has_traits_of_animal :Human ;
                :is_part_of_religious_mythology :Judaism .
+
+
+###  http://www.gryphontology.org/Proto-Indo-European_religion
+:Proto-Indo-European_religion rdf:type owl:NamedIndividual ,
+                                       :Religion ;
+                              rdfs:label "Proto-Indo-European religion"@en .
 
 
 ###  http://www.gryphontology.org/Rahab
