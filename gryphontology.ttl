@@ -13,7 +13,7 @@
                                  dc:description "An open-source formal ontology of legendary creatures from around the world."@en ;
                                  dc:title "GryphOntology"@en ;
                                  rdfs:seeAlso "https://github.com/taylorisveryonline/gryphontology"@en ;
-                                 owl:versionInfo "2022-02-05"@en .
+                                 owl:versionInfo "2022-03-01"@en .
 
 #################################################################
 #    Annotation properties
@@ -69,6 +69,12 @@ owl:equivalentClass rdf:type owl:AnnotationProperty .
 :found_in_country rdf:type owl:ObjectProperty ;
                   rdfs:domain :Mythological_Creature ;
                   rdfs:range :Country .
+
+
+###  http://www.gryphontology.org/found_in_motif
+:found_in_motif rdf:type owl:ObjectProperty ;
+                rdfs:domain :Mythological_Creature ;
+                rdfs:range :Motif .
 
 
 ###  http://www.gryphontology.org/has_degree_of_corporeality
@@ -564,7 +570,7 @@ owl:equivalentClass rdf:type owl:AnnotationProperty .
          :number_of_heads 2 ,
                           3 ;
          :wikidata_identifier "Q182790"^^xsd:string ;
-         rdfs:comment "An imaginary fire-breathing monster of great swiftness and strength, invented by the ancient Greek poets. (Vinycomb 1906)"^^xsd:string .
+         :historical_description "An imaginary fire-breathing monster of great swiftness and strength, invented by the ancient Greek poets. (Vinycomb 1906)"@en .
 
 
 ###  http://www.gryphontology.org/Christianity
@@ -579,7 +585,7 @@ owl:equivalentClass rdf:type owl:AnnotationProperty .
             :has_traits_of_animal :Bird ,
                                   :Snake ;
             :wikidata_identifier "Q1371084"^^xsd:string ;
-            rdfs:comment "This chimerical creature was said to be produced from a cock's egg hatched by a serpent; hence its name. It differs from the Wyvern of heraldry only in having a head like that of a dunghill cock. (Vinycomb 1906)"^^xsd:string .
+            :historical_description "This chimerical creature was said to be produced from a cock's egg hatched by a serpent; hence its name. It differs from the Wyvern of heraldry only in having a head like that of a dunghill cock. (Vinycomb 1906)"@en .
 
 
 ###  http://www.gryphontology.org/Corporeal
@@ -638,7 +644,7 @@ owl:equivalentClass rdf:type owl:AnnotationProperty .
         :is_able_to_fly :Aerial ;
         :is_described_in_region :Europe ;
         :wikidata_identifier "Q7559"^^xsd:string ;
-        rdfs:comment "The dragon is the most interesting and most frequently seen of all chimerical figures, and it is a remarkable fact that such a creature appears at an early period of the world's history to have been known in the East and in countries widely separated. Long anterior to the dawn of civilisation in the West of Europe, even in far-off China and Japan in the extreme East of Asia we find the dragon delineated in very much the same form in which it appears in our national heraldry. The ancients conceived it as the embodiment of malignant and destructive power, and with attributes of the most terrible kind. (Vinycomb 1906)"^^xsd:string .
+        :historical_description "The dragon is the most interesting and most frequently seen of all chimerical figures, and it is a remarkable fact that such a creature appears at an early period of the world's history to have been known in the East and in countries widely separated. Long anterior to the dawn of civilisation in the West of Europe, even in far-off China and Japan in the extreme East of Asia we find the dragon delineated in very much the same form in which it appears in our national heraldry. The ancients conceived it as the embodiment of malignant and destructive power, and with attributes of the most terrible kind. (Vinycomb 1906)"@en .
 
 
 ###  http://www.gryphontology.org/Drakaina
@@ -699,7 +705,7 @@ owl:equivalentClass rdf:type owl:AnnotationProperty .
                                :Canine ,
                                :Feline ;
          :wikidata_identifier "Q989686"^^xsd:string ;
-         rdfs:comment "An imaginary hybrid animal with the head of a fox, chest of a greyhound, talons of an eagle, and body of a lion; the hind legs and tail of a wolf. (Vinycomb 1906)"^^xsd:string .
+         :historical_description "An imaginary hybrid animal with the head of a fox, chest of a greyhound, talons of an eagle, and body of a lion; the hind legs and tail of a wolf. (Vinycomb 1906)"@en .
 
 
 ###  http://www.gryphontology.org/Epimacus
@@ -842,7 +848,7 @@ owl:equivalentClass rdf:type owl:AnnotationProperty .
                               :Snake ;
         :is_uniformly_gendered :Woman ;
         :wikidata_identifier "Q102059"^^xsd:string ;
-        rdfs:comment "In classic story there were three gorgons, with serpents on their heads instead of hair. Medusa was the chief of the three, and the only one that was mortal. So hideous was her face that whoever set eyes on it was instantly turned to stone. (Vinycomb 1906)"^^xsd:string .
+        :historical_description "In classic story there were three gorgons, with serpents on their heads instead of hair. Medusa was the chief of the three, and the only one that was mortal. So hideous was her face that whoever set eyes on it was instantly turned to stone. (Vinycomb 1906)"@en .
 
 
 ###  http://www.gryphontology.org/Greece
@@ -862,8 +868,8 @@ owl:equivalentClass rdf:type owl:AnnotationProperty .
                                :Feline ;
          :is_able_to_fly :Aerial ;
          :wikidata_identifier "Q130223"^^xsd:string ;
-         rdfs:comment "A fabulous, bird-like species of animals, dwelling in the Rhipaean mountains, between the Hyperboreans and the one-eyed Arimaspians, and guarding the gold of the north. The Arismaspians mounted on horseback, and attempted to steal the gold, and hence arose the hostility between the horse and the griffin. The body of the griffin was that of a lion, while the head and wings were those of an eagle. (Smith 1873)"^^xsd:string ,
-                      "The griffin, \"sacred to the sun,\" combines the bodily attributes of the \" cloud-cleaving eagle \" and the \"king of beasts,\" that is, it has the head, neck, wings, and talons of an eagle, conjoined to the hinder parts of a lion. It is usually represented with projecting ears, indicating an acute sense of hearing, in addition to its other supposed extraordinary qualities. (Vinycomb 1906)"^^xsd:string .
+         :historical_description "A fabulous, bird-like species of animals, dwelling in the Rhipaean mountains, between the Hyperboreans and the one-eyed Arimaspians, and guarding the gold of the north. The Arismaspians mounted on horseback, and attempted to steal the gold, and hence arose the hostility between the horse and the griffin. The body of the griffin was that of a lion, while the head and wings were those of an eagle. (Smith 1873)"@en ,
+                      "The griffin, \"sacred to the sun,\" combines the bodily attributes of the \" cloud-cleaving eagle \" and the \"king of beasts,\" that is, it has the head, neck, wings, and talons of an eagle, conjoined to the hinder parts of a lion. It is usually represented with projecting ears, indicating an acute sense of hearing, in addition to its other supposed extraordinary qualities. (Vinycomb 1906)"@en .
 
 
 ###  http://www.gryphontology.org/Griffon
@@ -890,7 +896,7 @@ owl:equivalentClass rdf:type owl:AnnotationProperty .
                              :Human ;
        :is_uniformly_gendered :Woman ;
        :wikidata_identifier "Q181360"^^xsd:string ;
-       rdfs:comment "A poetical monstrosity of classical origin, described as \"winged creatures having the head and breasts of a woman, and the body and limbs of a vulture; very fierce and loathsome, living in an atmosphere of filth and stench, and contaminating anything which they come near. Pale and emaciated, they were continually tormented with insatiable hunger.\" They are best known from the story of the Argonauts, where they appear as the tormentors of the blind king Phineus, whose table they robbed of its viands, which they either devoured or spoiled. They were regarded by the ancients as ministers of sudden death. (Vinycomb 1906)"^^xsd:string .
+       :historical_description "A poetical monstrosity of classical origin, described as \"winged creatures having the head and breasts of a woman, and the body and limbs of a vulture; very fierce and loathsome, living in an atmosphere of filth and stench, and contaminating anything which they come near. Pale and emaciated, they were continually tormented with insatiable hunger.\" They are best known from the story of the Argonauts, where they appear as the tormentors of the blind king Phineus, whose table they robbed of its viands, which they either devoured or spoiled. They were regarded by the ancients as ministers of sudden death. (Vinycomb 1906)"@en .
 
 
 ###  http://www.gryphontology.org/Headless_Men
@@ -931,7 +937,7 @@ owl:equivalentClass rdf:type owl:AnnotationProperty .
        :number_of_heads 7 ,
                         9 ;
        :wikidata_identifier "Q170379"^^xsd:string ;
-       rdfs:comment "The number of its heads varies with the poets, though ancient gems usually represent it with seven or nine. (Vinycomb 1906)"^^xsd:string .
+       :historical_description "The number of its heads varies with the poets, though ancient gems usually represent it with seven or nine. (Vinycomb 1906)"@en .
 
 
 ###  http://www.gryphontology.org/Imp
@@ -991,7 +997,7 @@ owl:equivalentClass rdf:type owl:AnnotationProperty .
        :is_described_by_civilization :Ancient_Greece ;
        :is_uniformly_gendered :Woman ;
        :wikidata_identifier "Q200073"^^xsd:string ;
-       rdfs:comment "It is said to be \"the swiftest of all four-footed creatures, that it is very treacherous and cruel to men. It is stated to be bred in Lybia, and sometimes devours its own young.\" It is represented in an ancient \"Bestiaria\" as having the head and breasts of a woman, and the body of a four-footed animal with flowing tail, the hind feet having divided hoofs. (Vinycomb 1906)"^^xsd:string .
+       :historical_description "It is said to be \"the swiftest of all four-footed creatures, that it is very treacherous and cruel to men. It is stated to be bred in Lybia, and sometimes devours its own young.\" It is represented in an ancient \"Bestiaria\" as having the head and breasts of a woman, and the body of a four-footed animal with flowing tail, the hind feet having divided hoofs. (Vinycomb 1906)"@en .
 
 
 ###  http://www.gryphontology.org/Leviathan
@@ -999,6 +1005,7 @@ owl:equivalentClass rdf:type owl:AnnotationProperty .
            owl:sameAs :Rahab ;
            :belongs_to_habitat :Aquatic ;
            :exhibits_behavior :Fire-breathing ;
+           :found_in_motif :Chaoskampf ;
            :has_moral_polarity :Evil ;
            :has_mythic_archetype :Draconic ;
            :has_traits_of_animal :Snake ;
@@ -1014,6 +1021,18 @@ owl:equivalentClass rdf:type owl:AnnotationProperty .
                    :has_degree_of_corporeality :Corporeal ;
                    :is_able_to_fly :Non-aerial ;
                    :wikidata_identifier "Q49658"^^xsd:string .
+
+
+###  http://www.gryphontology.org/Lotan
+:Lotan rdf:type owl:NamedIndividual ,
+                :Mythological_Creature ;
+       :belongs_to_habitat :Aquatic ;
+       :has_mythic_archetype :Draconic ;
+       :has_traits_of_animal :Snake ;
+       :is_part_of_religious_mythology :Canaanite_religion ;
+       :number_of_heads 7 ;
+       :wikidata_identifier "Q5196063" ;
+       rdfs:label "Lotan"@en .
 
 
 ###  http://www.gryphontology.org/Lycanthrope
@@ -1043,7 +1062,7 @@ owl:equivalentClass rdf:type owl:AnnotationProperty .
            :has_traits_of_animal :Feline ,
                                  :Human ;
            :wikidata_identifier "Q223795"^^xsd:string ;
-           rdfs:comment "A chimerical creature of mediaeval invention, having the body of an heraldic tiger with mane, and the head of an old man with long spiral horns. Some heraldic authorities make the horns more like those of an ox, and the feet like a dragon's. (Vinycomb 1906)"^^xsd:string .
+           :historical_description "A chimerical creature of mediaeval invention, having the body of an heraldic tiger with mane, and the head of an old man with long spiral horns. Some heraldic authorities make the horns more like those of an ox, and the feet like a dragon's. (Vinycomb 1906)"@en .
 
 
 ###  http://www.gryphontology.org/Mediterranean
@@ -1059,7 +1078,7 @@ owl:equivalentClass rdf:type owl:AnnotationProperty .
                                :Human ;
          :is_uniformly_gendered :Woman ;
          :wikidata_identifier "Q182559"^^xsd:string ;
-         rdfs:comment "This fabulous creature of the sea, well known in ancient and modern times as the frequent theme of poets and the subject of numberless legends, has from a very early date been a favourite device. She is usually represented in heraldry as having the upper part the head and body of a beautiful young woman, holding a comb and glass in her hands, the lower part ending in a fish. (Vinycomb 1906)"^^xsd:string .
+         :historical_description "This fabulous creature of the sea, well known in ancient and modern times as the frequent theme of poets and the subject of numberless legends, has from a very early date been a favourite device. She is usually represented in heraldry as having the upper part the head and body of a beautiful young woman, holding a comb and glass in her hands, the lower part ending in a fish. (Vinycomb 1906)"@en .
 
 
 ###  http://www.gryphontology.org/Merman
@@ -1071,7 +1090,7 @@ owl:equivalentClass rdf:type owl:AnnotationProperty .
                               :Human ;
         :is_uniformly_gendered :Man ;
         :wikidata_identifier "Q4995044"^^xsd:string ;
-        rdfs:comment "Triton was the only son of Neptune and Amphitrite. The poet Apollonius Rhodius describes him as having the upper parts of the body of a man, while the lower parts were those of a dolphin. Later poets and artists revelled in the conception of a whole race of similar tritons, who were regarded as a wanton, mischievous tribe, like the satyrs on land. (Vinycomb 1906)"^^xsd:string .
+        :historical_description "Triton was the only son of Neptune and Amphitrite. The poet Apollonius Rhodius describes him as having the upper parts of the body of a man, while the lower parts were those of a dolphin. Later poets and artists revelled in the conception of a whole race of similar tritons, who were regarded as a wanton, mischievous tribe, like the satyrs on land. (Vinycomb 1906)"@en .
 
 
 ###  http://www.gryphontology.org/Middle_East
@@ -1148,7 +1167,7 @@ owl:equivalentClass rdf:type owl:AnnotationProperty .
 ###  http://www.gryphontology.org/Opinicus
 :Opinicus rdf:type owl:NamedIndividual ,
                    :Mythological_Creature ;
-          rdfs:comment "This creature appears to be a variety of the griffin family. Authorities blazon it as having its body and four legs like those of a lion; the head and neck and wings like an eagle, and the short tail of a camel, sometimes borne sans wings. (Vinycomb 1906)"^^xsd:string .
+          :historical_description "This creature appears to be a variety of the griffin family. Authorities blazon it as having its body and four legs like those of a lion; the head and neck and wings like an eagle, and the short tail of a camel, sometimes borne sans wings. (Vinycomb 1906)"@en .
 
 
 ###  http://www.gryphontology.org/Panotti
@@ -1171,9 +1190,9 @@ owl:equivalentClass rdf:type owl:AnnotationProperty .
          :has_traits_of_animal :Bird ,
                                :Horse ;
          :is_able_to_fly :Aerial ;
-         rdfs:comment "A poetic creation of the ancients, a winged horse captured by Bellerophon, the great hero of Corinthian legend. (Vinycomb 1906)"^^xsd:string ,
-                      "In consequence of some false charges brought against him, Bellerophon was sent to combat with a monster called the Chimæra, in the expectation that he would perish in the attempt; but Minerva, pitying his situation, provided him with a winged horse, named Pegasus, by means of which he accomplished his perilous task in safety. (Pliny/Bostock 1855)"^^xsd:string ,
-                      "Æthiopia produces the lynx in abundance, and the sphinx, which has brown hair and two mammæ on the breast, as well as many monstrous kinds of a similar nature; horses with wings, and armed with horns, which are called pegasi...\" (Pliny/Bostock 1855)"^^xsd:string .
+         :historical_description "A poetic creation of the ancients, a winged horse captured by Bellerophon, the great hero of Corinthian legend. (Vinycomb 1906)"@en ,
+                      "In consequence of some false charges brought against him, Bellerophon was sent to combat with a monster called the Chimæra, in the expectation that he would perish in the attempt; but Minerva, pitying his situation, provided him with a winged horse, named Pegasus, by means of which he accomplished his perilous task in safety. (Pliny/Bostock 1855)"@en ,
+                      "Æthiopia produces the lynx in abundance, and the sphinx, which has brown hair and two mammæ on the breast, as well as many monstrous kinds of a similar nature; horses with wings, and armed with horns, which are called pegasi...\" (Pliny/Bostock 1855)"@en .
 
 
 ###  http://www.gryphontology.org/Petrifying
@@ -1189,7 +1208,7 @@ owl:equivalentClass rdf:type owl:AnnotationProperty .
          :has_moral_polarity :Good ;
          :has_traits_of_animal :Bird ;
          :is_able_to_fly :Aerial ;
-         rdfs:comment "An imaginary bird, described by ancient writers as in form like an eagle, but more beautiful in its plumage. Among the ancient classical writers it was an emblem of those existing in paradise, enjoying eternal youth and never-ending pleasure. (Vinycomb 1906)"^^xsd:string .
+         :historical_description "An imaginary bird, described by ancient writers as in form like an eagle, but more beautiful in its plumage. Among the ancient classical writers it was an emblem of those existing in paradise, enjoying eternal youth and never-ending pleasure. (Vinycomb 1906)"@en .
 
 
 ###  http://www.gryphontology.org/Pixie
@@ -1297,7 +1316,7 @@ owl:equivalentClass rdf:type owl:AnnotationProperty .
         :has_traits_of_animal :Human ;
         :is_part_of_religious_mythology :Judaism ;
         :wikidata_identifier "Q194077"^^xsd:string ;
-        rdfs:comment "The seraphim are regarded as an order of angels distinguished for fervent zeal and religious ardour. The word means \" burning,\" i.e., with Divine Love. (Vinycomb 1906)"^^xsd:string .
+        :historical_description "The seraphim are regarded as an order of angels distinguished for fervent zeal and religious ardour. The word means \" burning,\" i.e., with Divine Love. (Vinycomb 1906)"@en .
 
 
 ###  http://www.gryphontology.org/Shade
@@ -1347,7 +1366,7 @@ owl:equivalentClass rdf:type owl:AnnotationProperty .
         :is_described_by_civilization :Ancient_Greece ;
         :is_uniformly_gendered :Woman ;
         :wikidata_identifier "Q151480"^^xsd:string ;
-        rdfs:comment "Hera sent the Sphinx, whose mother was Echidna and her father Typhon; and she had the face of a woman, the breast and feet and tail of a lion, and the wings of a bird. (Apollodorus/Frazer 1921)"^^xsd:string .
+        :historical_description "Hera sent the Sphinx, whose mother was Echidna and her father Typhon; and she had the face of a woman, the breast and feet and tail of a lion, and the wings of a bird. (Apollodorus/Frazer 1921)"@en .
 
 
 ###  http://www.gryphontology.org/Spirit
@@ -1405,7 +1424,7 @@ owl:equivalentClass rdf:type owl:AnnotationProperty .
                                :Horse ;
          :number_of_horns 1 ;
          :wikidata_identifier "Q7246"^^xsd:string ;
-         rdfs:comment "The Unicorn is a Creature about the bigness of a Horse, he hath the beard of a Goat, the head of a Hart, he hath a neck with a large main, he hath the feet of an Elephant, the tayl of a Hog, he hath one black horn in the middle of his forehead about two cubits long. (Franzius 1670)"@en ,
+         :historical_description "The Unicorn is a Creature about the bigness of a Horse, he hath the beard of a Goat, the head of a Hart, he hath a neck with a large main, he hath the feet of an Elephant, the tayl of a Hog, he hath one black horn in the middle of his forehead about two cubits long. (Franzius 1670)"@en ,
                       "The pegasus and the rhinoceros together may have given rise to that fabulous animal, the unicorn. (Pliny/Bostock 1855)"@en ,
                       "The unicorn is represented by heraldic usage as having the head and body of a horse, with the tail of a lion, and the limbs and hoofs of a stag; a twisted horn grows out from the centre of its forehead. (...) The unicorn was a famous device all over Europe, and symbolised the virtue of the mind and the strength of the body. (Vinycomb 1906)"@en ;
          rdfs:label "Unicorn"@en .
@@ -1459,7 +1478,7 @@ owl:equivalentClass rdf:type owl:AnnotationProperty .
                               :Snake ;
         :is_able_to_fly :Aerial ;
         :wikidata_identifier "Q862809"^^xsd:string ;
-        rdfs:comment "Said to represent a flying serpent, an imaginary creature resembling the dragon, but having only two legs, which are like an eagle's, and a serpent-like tail, barbed, sometimes represented nowed after the manner of serpents. (Vinycomb 1906)"^^xsd:string .
+        :historical_description "Said to represent a flying serpent, an imaginary creature resembling the dragon, but having only two legs, which are like an eagle's, and a serpent-like tail, barbed, sometimes represented nowed after the manner of serpents. (Vinycomb 1906)"@en .
 
 
 ###  http://www.gryphontology.org/Zombie
